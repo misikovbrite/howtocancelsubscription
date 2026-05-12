@@ -580,6 +580,19 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
     .app-promo-banner .dl-btn:hover{transform:translateY(-1px)}
     .app-promo-banner .dl-btn svg{width:14px;height:14px}
 
+    /* Request guide */
+    .request-block{background:#fff;border-radius:16px;padding:20px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 1px 6px rgba(0,0,0,.06);margin-top:28px;border:1.5px solid #ffe0e0}
+    .request-left{display:flex;align-items:center;gap:12px;flex:1;min-width:200px}
+    .req-icon{font-size:28px;flex-shrink:0}
+    .request-left strong{display:block;font-size:15px;font-weight:800;color:#1a1f2e;margin-bottom:2px}
+    .request-left span{font-size:13px;color:#666}
+    .req-form{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+    .req-form input{flex:1;min-width:140px;padding:9px 14px;border:1.5px solid #e0e3ed;border-radius:9px;font-size:13px;outline:none;transition:border-color .15s}
+    .req-form input:focus{border-color:#ff5c5c}
+    .req-form button{background:#ff5c5c;color:#fff;border:none;padding:9px 20px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s}
+    .req-form button:hover{background:#ff3b3b}
+    .req-success{background:#e8f5e9;color:#2e7d32;font-size:14px;font-weight:700;padding:10px 18px;border-radius:9px}
+
     /* Footer */
     footer{text-align:center;padding:32px 20px;color:#999;font-size:13px;border-top:1px solid #e0e3ed;margin-top:48px}
     footer a{color:#aaa;margin:0 8px}
@@ -605,48 +618,6 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
   <a href="/" class="back-btn">← All guides</a>
 </header>
 
-<!-- Audit bar -->
-<div class="audit-bar">
-  <div class="inner">
-    <div class="audit-left">
-      <div class="tag">Free Service</div>
-      <strong>Not sure which subscriptions to cancel?</strong>
-      <span>Tell us what you're paying for — we'll review and suggest what to cut.</span>
-    </div>
-    <button class="audit-cta" onclick="openAudit()">🔍 Get a Free Audit</button>
-  </div>
-</div>
-
-<!-- Audit modal -->
-<div class="audit-overlay" id="audit-overlay" onclick="if(event.target===this)closeAudit()">
-  <div class="audit-modal">
-    <button class="close" onclick="closeAudit()">✕</button>
-    <?php if ($audit_success): ?>
-    <div class="audit-success">
-      <div class="big">🎉</div>
-      <h3>Got it! We'll review your subscriptions</h3>
-      <p>We'll analyze your list and email you within 24 hours with personalized recommendations on what to keep, what to cancel, and how much you could save.</p>
-    </div>
-    <?php else: ?>
-    <h2>Free Subscription Audit</h2>
-    <p class="sub">List your current subscriptions and we'll review them — telling you exactly which ones aren't worth keeping and how to cancel them.</p>
-    <form method="post" action="<?= $app ? "/how-to-cancel-$slug-subscription/" : "/" ?>">
-      <label>Your email address <span style="color:#ff5c5c">*</span></label>
-      <input type="email" name="audit_email" placeholder="you@example.com" required>
-
-      <label>List your subscriptions <span style="color:#ff5c5c">*</span></label>
-      <textarea name="audit_subs" placeholder="e.g.&#10;Netflix $15.99/mo&#10;Spotify $9.99/mo&#10;Hulu $17.99/mo&#10;Adobe $54.99/mo&#10;Calm $69.99/yr&#10;...and any others" required></textarea>
-      <div class="hint">One per line — include price if you know it</div>
-
-      <label>Monthly budget for subscriptions (optional)</label>
-      <input type="text" name="audit_budget" placeholder="e.g. $30/month">
-
-      <button type="submit" class="submit-btn">Send My List for Review →</button>
-      <p style="font-size:11px;color:#aaa;text-align:center;margin-top:10px">Free, no spam. We'll reply within 24 hours.</p>
-    </form>
-    <?php endif; ?>
-  </div>
-</div>
 
 <?php if (!$app): ?>
 <div class="wrap" style="padding-top:40px;text-align:center">
@@ -831,6 +802,44 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
 </div><!-- /wrap -->
 
 <?php endif; ?>
+
+<?php
+$req_sent = false;
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
+  $req_service = trim(strip_tags($_POST['req_service'] ?? ''));
+  $req_email   = trim(strip_tags($_POST['req_email']   ?? ''));
+  if ($req_service) {
+    $log = date('Y-m-d H:i:s') . "\tService: $req_service\tEmail: $req_email\tPage: $slug\n";
+    file_put_contents(__DIR__ . '/guide_requests.txt', $log, FILE_APPEND | LOCK_EX);
+    @mail('hello@britetodo.com',
+      "Guide Request: $req_service",
+      "Service: $req_service\nEmail: $req_email\nPage: $slug",
+      "From: noreply@howtocancelsubscription.com\r\nReply-To: $req_email"
+    );
+    $req_sent = true;
+  }
+}
+?>
+<div class="wrap" style="margin-bottom:0">
+  <div class="request-block">
+    <div class="request-left">
+      <div class="req-icon">🔍</div>
+      <div>
+        <strong>Don't see your subscription?</strong>
+        <span>Tell us — we'll add a step-by-step guide within 24 hours.</span>
+      </div>
+    </div>
+    <?php if ($req_sent): ?>
+      <div class="req-success">✓ Thanks! Guide coming soon.</div>
+    <?php else: ?>
+    <form class="req-form" method="post">
+      <input type="text" name="req_service" placeholder="Service name…" maxlength="80" required>
+      <input type="email" name="req_email" placeholder="Your email (optional)">
+      <button type="submit">Request →</button>
+    </form>
+    <?php endif; ?>
+  </div>
+</div>
 
 <footer>
   <p>© <?= date('Y') ?> HowToCancelSubscription.com — Free guides to cancel any subscription</p>

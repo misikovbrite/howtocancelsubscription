@@ -10,10 +10,10 @@ $site_name = "HowToCancelSubscription";
   <title>How to Cancel Any Subscription — Step-by-Step Guides</title>
   <meta name="description" content="Free step-by-step guides to cancel any subscription. Find your app or service and cancel in minutes — Netflix, Spotify, Amazon, Hulu, Adobe, and 100+ more.">
   <link rel="canonical" href="<?= $site_url ?>/">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon_192.png" type="image/png" sizes="192x192">
-  <link rel="apple-touch-icon" href="/icon_180.png">
-  <meta property="og:image" content="<?= $site_url ?>/icon_192.png">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="icon" href="/icon_192.png?v=2" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/icon_180.png?v=2">
+  <meta property="og:image" content="<?= $site_url ?>/icon_192.png?v=2">
   <meta property="og:title" content="How to Cancel Any Subscription — Step-by-Step Guides">
   <meta property="og:description" content="Cancel any subscription in minutes. Step-by-step guides for Netflix, Spotify, Amazon, Hulu, Adobe, and 100+ more.">
   <meta property="og:url" content="<?= $site_url ?>/">
@@ -153,6 +153,19 @@ $site_name = "HowToCancelSubscription";
     .app-promo-banner .stars{display:flex;align-items:center;gap:4px;margin-bottom:8px}
     .app-promo-banner .stars span{font-size:13px;color:rgba(255,255,255,.5)}
 
+    /* Request guide block */
+    .request-block{background:#fff;border-radius:16px;padding:20px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 1px 6px rgba(0,0,0,.06);margin-top:28px;border:1.5px solid #ffe0e0}
+    .request-left{display:flex;align-items:center;gap:12px;flex:1;min-width:200px}
+    .req-icon{font-size:28px;flex-shrink:0}
+    .request-left strong{display:block;font-size:15px;font-weight:800;color:#1a1f2e;margin-bottom:2px}
+    .request-left span{font-size:13px;color:#666}
+    .req-form{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+    .req-form input{flex:1;min-width:160px;padding:9px 14px;border:1.5px solid #e0e3ed;border-radius:9px;font-size:13px;outline:none;transition:border-color .15s}
+    .req-form input:focus{border-color:#ff5c5c}
+    .req-form button{background:#ff5c5c;color:#fff;border:none;padding:9px 20px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s}
+    .req-form button:hover{background:#ff3b3b}
+    .req-success{background:#e8f5e9;color:#2e7d32;font-size:14px;font-weight:700;padding:10px 18px;border-radius:9px}
+
     /* Footer */
     footer{text-align:center;padding:32px 20px 28px;color:#999;font-size:13px;border-top:1px solid #e0e3ed;margin-top:48px}
     footer a{color:#aaa;margin:0 8px}
@@ -202,7 +215,7 @@ $site_name = "HowToCancelSubscription";
   </div>
 
   <a href="https://apps.apple.com/us/app/cancel-subscriptions-app/id6759456590" class="app-promo-hero" target="_blank" rel="noopener">
-    <div class="app-ico"><img src="/icon_180.png" alt="Cancel Subscriptions App"></div>
+    <div class="app-ico"><img src="/icon_180.png?v=2" alt="Cancel Subscriptions App"></div>
     <div class="app-text">
       <div class="tag">Free iOS App</div>
       <div class="title">See all your subscriptions instantly</div>
@@ -429,7 +442,7 @@ foreach ($apps as $app) {
 <!-- App promo banner -->
 <div class="wrap">
   <a href="https://apps.apple.com/us/app/cancel-subscriptions-app/id6759456590" class="app-promo-banner" target="_blank" rel="noopener">
-    <div class="app-ico"><img src="/icon_180.png" alt="Cancel Subscriptions App"></div>
+    <div class="app-ico"><img src="/icon_180.png?v=2" alt="Cancel Subscriptions App"></div>
     <div class="info">
       <div class="tag">Free iOS App</div>
       <div class="stars">
@@ -443,6 +456,47 @@ foreach ($apps as $app) {
       </div>
     </div>
   </a>
+</div>
+
+<?php
+// Request guide form handler
+$request_sent = false;
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
+  $req_service = trim(strip_tags($_POST['req_service'] ?? ''));
+  $req_email   = trim(strip_tags($_POST['req_email']   ?? ''));
+  if ($req_service) {
+    $log = date('Y-m-d H:i:s') . "\tService: $req_service\tEmail: $req_email\n";
+    file_put_contents(__DIR__ . '/guide_requests.txt', $log, FILE_APPEND | LOCK_EX);
+    @mail('hello@britetodo.com',
+      "Guide Request: $req_service",
+      "Someone requested a cancellation guide.\n\nService: $req_service\nEmail: $req_email\nPage: homepage",
+      "From: noreply@howtocancelsubscription.com\r\nReply-To: $req_email"
+    );
+    $request_sent = true;
+  }
+}
+?>
+
+<!-- Request guide block -->
+<div class="wrap">
+  <div class="request-block">
+    <div class="request-left">
+      <div class="req-icon">🔍</div>
+      <div>
+        <strong>Can't find your subscription?</strong>
+        <span>Tell us the service name — we'll add a step-by-step guide within 24 hours.</span>
+      </div>
+    </div>
+    <?php if ($request_sent): ?>
+      <div class="req-success">✓ Thanks! We'll add the guide soon.</div>
+    <?php else: ?>
+    <form class="req-form" method="post">
+      <input type="text" name="req_service" placeholder="Service name, e.g. Tidal, DAZN…" maxlength="80" required>
+      <input type="email" name="req_email" placeholder="Your email (optional)">
+      <button type="submit">Request Guide →</button>
+    </form>
+    <?php endif; ?>
+  </div>
 </div>
 
 <footer>
