@@ -280,6 +280,9 @@ $apps = [
   ["Kindle Unlimited","kindle-unlimited","📚","Other",            590, "Cancel & keep books"],
   ["New York Times", "new-york-times", "📰", "Other",             590, "Cancel NYT digital"],
   ["Shopify",        "shopify",        "🛒", "Other",             320, "Cancel store plan"],
+  ["Uber One",       "uber-eats",      "🚗", "Other",             480, "Cancel Uber One"],
+  ["TikTok",         "tiktok",         "🎵", "Social & Dating",   720, "Cancel TikTok subscription"],
+  ["CapCut Pro",     "capcut",         "🎬", "Productivity",      480, "Cancel CapCut Pro"],
 ];
 
 // Sort by monthly searches

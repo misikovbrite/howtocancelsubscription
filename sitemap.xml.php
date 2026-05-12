@@ -8,7 +8,8 @@ $apps = [
   "google-play","app-store","weight-watchers","audible","norton","mcafee",
   "microsoft-365","tinder","bumble","hellofresh","doordash","calm","duolingo",
   "grammarly","siriusxm","starz","sling-tv","espn-plus","hbo-max",
-  "paramount-plus","ipsy","amazon-music","kindle-unlimited","new-york-times","shopify"
+  "paramount-plus","ipsy","amazon-music","kindle-unlimited","new-york-times",
+  "shopify","uber-eats","tiktok","capcut"
 ];
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
