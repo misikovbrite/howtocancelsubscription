@@ -384,8 +384,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['audit_email'])) {
 if (!$app) {
   http_response_code(404);
 }
+$platforms_count = $app ? count($app['platforms']) : 0;
+$platform_names  = $app ? implode(', ', array_map(fn($p) => $p['label'], $app['platforms'])) : '';
 $title    = $app ? "How to Cancel {$app['name']} Subscription — Step-by-Step Guide" : "Page Not Found";
-$desc     = $app ? "Learn how to cancel your {$app['name']} subscription on iPhone, Android, and web browser. {$app['tagline']}." : "";
+$desc     = $app ? "How to cancel {$app['name']} on {$platform_names} — step-by-step. {$app['tagline']}. Free guide, takes 2 minutes." : "";
 $canon    = $app ? "$site_url/how-to-cancel-$slug-subscription/" : "$site_url/";
 $platforms = $app ? array_values($app['platforms']) : [];
 $first_key = $app ? array_keys($app['platforms'])[0] : '';
@@ -407,15 +409,40 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
   {
     "@context":"https://schema.org",
     "@type":"HowTo",
-    "name":"How to Cancel <?= $app['name'] ?> Subscription",
+    "name":"How to Cancel <?= htmlspecialchars($app['name']) ?> Subscription",
     "description":"<?= addslashes($desc) ?>",
+    "totalTime":"PT2M",
+    "tool":{"@type":"HowToTool","name":"Web browser or smartphone"},
     "step":[<?php
       $first = reset($app['platforms']);
       echo implode(',', array_map(fn($s,$i) =>
-        '{"@type":"HowToStep","position":'.($i+1).',"text":'.json_encode(strip_tags($s)).'}',
+        '{"@type":"HowToStep","position":'.($i+1).',"name":"Step '.($i+1).'","text":'.json_encode(strip_tags($s)).'}',
         $first['steps'], array_keys($first['steps'])
       ));
     ?>]
+  }
+  </script>
+  <?php if (!empty($app['faq'])): ?>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[<?php
+      echo implode(',', array_map(fn($faq) =>
+        '{"@type":"Question","name":'.json_encode($faq[0]).',"acceptedAnswer":{"@type":"Answer","text":'.json_encode($faq[1]).'}}'
+      , $app['faq']));
+    ?>]
+  }
+  </script>
+  <?php endif; ?>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"<?= $site_url ?>"},
+      {"@type":"ListItem","position":2,"name":"How to Cancel <?= htmlspecialchars($app['name']) ?> Subscription","item":"<?= $canon ?>"}
+    ]
   }
   </script>
   <?php endif; ?>
@@ -533,6 +560,12 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
     .sec-header{display:flex;align-items:center;gap:10px;margin:24px 0 14px}
     .sec-header h2{font-size:17px;font-weight:800;color:#1a1f2e}
     .sec-line{flex:1;height:1px;background:#e0e3ed}
+
+    /* SEO block */
+    .seo-block{background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 1px 6px rgba(0,0,0,.06);margin-top:20px}
+    .seo-block h2{font-size:18px;font-weight:800;color:#1a1f2e;margin-bottom:10px}
+    .seo-block h3{font-size:15px;font-weight:700;color:#2d3561;margin:18px 0 7px}
+    .seo-block p{font-size:14px;color:#555;line-height:1.8;margin-bottom:8px}
 
     /* App promo */
     .app-promo-banner{background:linear-gradient(135deg,#1a1f2e 0%,#2d3561 100%);border-radius:20px;padding:24px;display:flex;align-items:center;gap:18px;margin-top:24px;position:relative;overflow:hidden}
@@ -765,9 +798,25 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
   </div>
   <?php endif; ?>
 
+  <!-- SEO content block -->
+  <div class="seo-block">
+    <h2>About <?= $app['name'] ?> Subscriptions</h2>
+    <p><?= $app['about'] ?> This guide covers every platform — <?= $platform_names ?> — so you can cancel from whichever device you have handy.</p>
+
+    <h3>Before You Cancel <?= $app['name'] ?></h3>
+    <p>Before cancelling, check a few things: <strong>which platform you subscribed on</strong> (App Store, Google Play, or the website directly), since you must cancel in the same place you signed up. If you subscribed on the website, cancelling through your iPhone Settings won't work — and vice versa.</p>
+    <p>Also note your <strong>next billing date</strong>. <?= $app['name'] ?> doesn't delete your account when you cancel — you keep access until the period ends. There's no penalty for cancelling early, but you won't get a refund for unused days unless stated in the refund policy above.</p>
+
+    <h3>Can I Resubscribe After Cancelling?</h3>
+    <p>Yes — you can resubscribe to <?= $app['name'] ?> at any time. Your account data, preferences, and history are typically preserved for 30–90 days after cancellation, depending on the service. Simply log back in and choose a new plan.</p>
+
+    <h3>What If I Can't Find the Cancel Button?</h3>
+    <p>Some services intentionally bury the cancel option. Follow the exact steps above — if you still can't find it, check that you're logged into the correct account (some people have multiple accounts). You can also contact <?= $app['name'] ?> support directly and request cancellation via chat or email — they are legally required to process it.</p>
+  </div>
+
   <!-- App promo -->
   <a href="https://apps.apple.com/us/app/cancel-subscriptions-app/id6759456590" class="app-promo-banner" target="_blank" rel="noopener">
-    <div class="app-ico"><img src="/icon_180.png?v=2" alt="Cancel Subscriptions App"></div>
+    <div class="app-ico"><img src="/icon_180.png?v=2" alt="Cancel Subscriptions App" title="Cancel Subscriptions — Free iOS App"></div>
     <div class="info">
       <div class="tag">Free iOS App</div>
       <h3>See ALL your subscriptions at once</h3>
