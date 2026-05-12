@@ -126,16 +126,52 @@ $site_name = "HowToCancelSubscription";
     .seo-block h3{font-size:16px;font-weight:700;color:#2d3561;margin:20px 0 8px}
     .seo-block p{font-size:14px;color:#555;line-height:1.8;margin-bottom:10px}
 
+    /* App promo */
+    .app-promo-hero{margin-top:28px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:16px 20px;display:flex;align-items:center;gap:14px;max-width:480px;margin-left:auto;margin-right:auto;text-decoration:none;transition:background .2s}
+    .app-promo-hero:hover{background:rgba(255,255,255,.16)}
+    .app-promo-hero .app-ico{width:52px;height:52px;border-radius:12px;flex-shrink:0;overflow:hidden}
+    .app-promo-hero .app-ico img{width:100%;height:100%;display:block}
+    .app-promo-hero .app-text{flex:1;text-align:left}
+    .app-promo-hero .app-text .tag{font-size:10px;font-weight:800;letter-spacing:.8px;color:#ff5c5c;text-transform:uppercase;margin-bottom:3px}
+    .app-promo-hero .app-text .title{font-size:15px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:3px}
+    .app-promo-hero .app-text .sub{font-size:12px;color:rgba(255,255,255,.6);line-height:1.4}
+    .app-promo-hero .dl-btn{background:#fff;color:#1a1f2e;font-size:12px;font-weight:800;padding:8px 14px;border-radius:50px;white-space:nowrap;flex-shrink:0;display:flex;align-items:center;gap:5px}
+    .app-promo-hero .dl-btn svg{width:14px;height:14px}
+
+    .app-promo-banner{background:linear-gradient(135deg,#1a1f2e 0%,#2d3561 100%);border-radius:20px;padding:28px 24px;display:flex;align-items:center;gap:20px;margin-top:28px;position:relative;overflow:hidden}
+    .app-promo-banner::before{content:'';position:absolute;right:-40px;top:-40px;width:180px;height:180px;background:rgba(255,92,92,.12);border-radius:50%}
+    .app-promo-banner::after{content:'';position:absolute;right:20px;bottom:-30px;width:120px;height:120px;background:rgba(255,255,255,.04);border-radius:50%}
+    .app-promo-banner .app-ico{width:72px;height:72px;border-radius:16px;flex-shrink:0;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.3);position:relative;z-index:1}
+    .app-promo-banner .app-ico img{width:100%;height:100%;display:block}
+    .app-promo-banner .info{flex:1;position:relative;z-index:1}
+    .app-promo-banner .info .tag{font-size:10px;font-weight:800;letter-spacing:.8px;color:#ff5c5c;text-transform:uppercase;margin-bottom:6px}
+    .app-promo-banner .info h3{font-size:18px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:6px}
+    .app-promo-banner .info p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.55;margin-bottom:14px}
+    .app-promo-banner .dl-btn{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#1a1f2e;font-size:13px;font-weight:800;padding:10px 20px;border-radius:50px;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+    .app-promo-banner .dl-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+    .app-promo-banner .dl-btn svg{width:16px;height:16px;flex-shrink:0}
+    .app-promo-banner .stars{display:flex;align-items:center;gap:4px;margin-bottom:8px}
+    .app-promo-banner .stars span{font-size:13px;color:rgba(255,255,255,.5)}
+
     /* Footer */
-    footer{text-align:center;padding:40px 20px 32px;color:#999;font-size:13px;border-top:1px solid #e0e3ed;margin-top:48px}
+    footer{text-align:center;padding:32px 20px 28px;color:#999;font-size:13px;border-top:1px solid #e0e3ed;margin-top:48px}
     footer a{color:#aaa;margin:0 8px}
     footer a:hover{color:#ff5c5c}
 
     @media(max-width:600px){
-      .hero{padding:40px 20px 36px}
+      .hero{padding:36px 16px 32px}
       .app-grid{grid-template-columns:repeat(2,1fr)}
       .header-search{display:none}
-      .hero-stats{gap:20px}
+      .hero-stats{gap:16px}
+      .hero-stats .stat strong{font-size:18px}
+      .app-promo-hero{margin-top:20px;padding:14px 16px;gap:12px}
+      .app-promo-hero .dl-btn{padding:7px 12px;font-size:11px}
+      .app-promo-banner{flex-direction:column;text-align:center;padding:24px 20px;gap:16px}
+      .app-promo-banner .app-ico{width:64px;height:64px}
+      .app-promo-banner .info h3{font-size:17px}
+      .app-promo-banner .stars{justify-content:center}
+      .pop-item .info .desc{display:none}
+      .steps{grid-template-columns:1fr 1fr}
     }
   </style>
 </head>
@@ -164,6 +200,19 @@ $site_name = "HowToCancelSubscription";
     <div class="stat"><strong>2 min</strong><span>Average read time</span></div>
     <div class="stat"><strong>Free</strong><span>No sign-up needed</span></div>
   </div>
+
+  <a href="https://apps.apple.com/us/app/cancel-subscriptions-app/id6759456590" class="app-promo-hero" target="_blank" rel="noopener">
+    <div class="app-ico"><img src="/icon_180.png" alt="Cancel Subscriptions App"></div>
+    <div class="app-text">
+      <div class="tag">Free iOS App</div>
+      <div class="title">See all your subscriptions instantly</div>
+      <div class="sub">Scan &amp; cancel unwanted subscriptions from your iPhone</div>
+    </div>
+    <div class="dl-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download Free
+    </div>
+  </a>
 </div>
 
 <?php
@@ -376,6 +425,25 @@ foreach ($apps as $app) {
   </div>
 
 </div><!-- /wrap -->
+
+<!-- App promo banner -->
+<div class="wrap">
+  <a href="https://apps.apple.com/us/app/cancel-subscriptions-app/id6759456590" class="app-promo-banner" target="_blank" rel="noopener">
+    <div class="app-ico"><img src="/icon_180.png" alt="Cancel Subscriptions App"></div>
+    <div class="info">
+      <div class="tag">Free iOS App</div>
+      <div class="stars">
+        ⭐⭐⭐⭐⭐ <span>Cancel Subscriptions App</span>
+      </div>
+      <h3>Don't know what you're paying for?<br>Scan &amp; cancel in seconds.</h3>
+      <p>Our free iPhone app detects all your active subscriptions automatically — even the ones you forgot about. Cancel unwanted ones right from the app, no phone calls needed.</p>
+      <div class="dl-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download Free on the App Store
+      </div>
+    </div>
+  </a>
+</div>
 
 <footer>
   <p>© <?= date('Y') ?> HowToCancelSubscription.com — Free guides to cancel any subscription</p>
