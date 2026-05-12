@@ -473,8 +473,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
     @mail('hello@britetodo.com',
       "Guide Request: $req_service",
       "Someone requested a cancellation guide.\n\nService: $req_service\nEmail: $req_email\nPage: homepage",
-      "From: noreply@howtocancelsubscription.com\r\nReply-To: $req_email"
+      "From: noreply@howtocancelsubscription.com\r\nReply-To: " . ($req_email ?: 'noreply@howtocancelsubscription.com')
     );
+    if (!empty($_POST['_ajax'])) {
+      header('Content-Type: application/json');
+      echo json_encode(['ok' => true]);
+      exit;
+    }
     $request_sent = true;
   }
 }
@@ -490,15 +495,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
         <span>Tell us the service name — we'll add a step-by-step guide within 24 hours.</span>
       </div>
     </div>
-    <?php if ($request_sent): ?>
-      <div class="req-success">✓ Thanks! We'll add the guide soon.</div>
-    <?php else: ?>
-    <form class="req-form" method="post">
-      <input type="text" name="req_service" placeholder="Service name, e.g. Tidal, DAZN…" maxlength="80" required>
+    <div id="req-success" class="req-success" style="display:none">✓ Thanks! We'll add the guide soon.</div>
+    <form class="req-form" id="req-form" method="post">
+      <input type="hidden" name="_ajax" value="1">
+      <input type="text" name="req_service" id="req_service" placeholder="Service name, e.g. Tidal, DAZN…" maxlength="80" required>
       <input type="email" name="req_email" placeholder="Your email (optional)">
       <button type="submit">Request Guide →</button>
     </form>
-    <?php endif; ?>
   </div>
 </div>
 
@@ -551,6 +554,8 @@ function filterByName(q) {
 function filterCat(cat, btn) {
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  const popSection = document.querySelector('.pop-list') && document.querySelector('.pop-list').closest('.section');
+  if (popSection) popSection.style.display = cat === 'all' ? '' : 'none';
   document.querySelectorAll('.app-card').forEach(card => {
     const show = cat === 'all' || card.dataset.cat === cat || card.dataset.cat.startsWith(cat);
     card.style.display = show ? '' : 'none';
@@ -561,6 +566,28 @@ function toggleFaq(el) {
   const ans = el.nextElementSibling;
   const open = el.classList.toggle('open');
   ans.style.display = open ? 'block' : 'none';
+}
+
+// Request guide form — AJAX submit
+const reqForm = document.getElementById('req-form');
+if (reqForm) {
+  reqForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch('/', {method:'POST', body: new FormData(this)});
+      const json = await res.json();
+      if (json.ok) {
+        this.style.display = 'none';
+        document.getElementById('req-success').style.display = '';
+      }
+    } catch(err) {
+      btn.disabled = false;
+      btn.textContent = 'Request Guide →';
+    }
+  });
 }
 
 // Close dropdown on outside click

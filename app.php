@@ -2715,7 +2715,6 @@ $first_key = $app ? array_keys($app['platforms'])[0] : '';
 <?php endif; ?>
 
 <?php
-$req_sent = false;
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
   $req_service = trim(strip_tags($_POST['req_service'] ?? ''));
   $req_email   = trim(strip_tags($_POST['req_email']   ?? ''));
@@ -2725,9 +2724,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
     @mail('hello@britetodo.com',
       "Guide Request: $req_service",
       "Service: $req_service\nEmail: $req_email\nPage: $slug",
-      "From: noreply@howtocancelsubscription.com\r\nReply-To: $req_email"
+      "From: noreply@howtocancelsubscription.com\r\nReply-To: " . ($req_email ?: 'noreply@howtocancelsubscription.com')
     );
-    $req_sent = true;
+    if (!empty($_POST['_ajax'])) {
+      header('Content-Type: application/json');
+      echo json_encode(['ok' => true]);
+      exit;
+    }
   }
 }
 ?>
@@ -2740,15 +2743,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['req_service'])) {
         <span>Tell us — we'll add a step-by-step guide within 24 hours.</span>
       </div>
     </div>
-    <?php if ($req_sent): ?>
-      <div class="req-success">✓ Thanks! Guide coming soon.</div>
-    <?php else: ?>
-    <form class="req-form" method="post">
+    <div id="req-success" class="req-success" style="display:none">✓ Thanks! Guide coming soon.</div>
+    <form class="req-form" id="req-form" method="post">
+      <input type="hidden" name="_ajax" value="1">
       <input type="text" name="req_service" placeholder="Service name…" maxlength="80" required>
       <input type="email" name="req_email" placeholder="Your email (optional)">
       <button type="submit">Request →</button>
     </form>
-    <?php endif; ?>
   </div>
 </div>
 
@@ -2781,6 +2782,26 @@ function toggleFaq(el) {
   const ans = el.nextElementSibling;
   const open = el.classList.toggle('open');
   ans.style.display = open ? 'block' : 'none';
+}
+const reqForm = document.getElementById('req-form');
+if (reqForm) {
+  reqForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(window.location.href, {method:'POST', body: new FormData(this)});
+      const json = await res.json();
+      if (json.ok) {
+        this.style.display = 'none';
+        document.getElementById('req-success').style.display = '';
+      }
+    } catch(err) {
+      btn.disabled = false;
+      btn.textContent = 'Request →';
+    }
+  });
 }
 </script>
 </body>
