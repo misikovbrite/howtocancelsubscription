@@ -10,7 +10,10 @@ $site_name = "HowToCancelSubscription";
   <title>How to Cancel Any Subscription — Step-by-Step Guides</title>
   <meta name="description" content="Free step-by-step guides to cancel any subscription. Find your app or service and cancel in minutes — Netflix, Spotify, Amazon, Hulu, Adobe, and 100+ more.">
   <link rel="canonical" href="<?= $site_url ?>/">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon_192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/icon_180.png">
+  <meta property="og:image" content="<?= $site_url ?>/icon_192.png">
   <meta property="og:title" content="How to Cancel Any Subscription — Step-by-Step Guides">
   <meta property="og:description" content="Cancel any subscription in minutes. Step-by-step guides for Netflix, Spotify, Amazon, Hulu, Adobe, and 100+ more.">
   <meta property="og:url" content="<?= $site_url ?>/">
