@@ -9,7 +9,12 @@ $en_apps = [
   "microsoft-365","tinder","bumble","hellofresh","doordash","calm","duolingo",
   "grammarly","siriusxm","starz","sling-tv","espn-plus","hbo-max",
   "paramount-plus","ipsy","amazon-music","kindle-unlimited","new-york-times",
-  "shopify","uber-eats","tiktok","capcut"
+  "shopify","uber-eats","tiktok","capcut",
+  "planet-fitness","linkedin","playstation-plus","xbox-game-pass","twitch",
+  "apple-music","instacart","zoom","dropbox","ancestry","chegg","pandora",
+  "philo","nordvpn","hinge","nba-league-pass","youtube-premium","eharmony",
+  "mlb-tv","masterclass","surfshark","match","mubi","aura","plenty-of-fish",
+  "britbox","noom","peloton"
 ];
 
 $de_apps = [
