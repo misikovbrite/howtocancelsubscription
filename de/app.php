@@ -1159,6 +1159,730 @@ $apps_data = [
     ],
     "related" => ["spotify", "amazon-prime", "audible", "youtube-premium"],
   ],
+
+  "kindle-unlimited" => [
+    "name"     => "Kindle Unlimited",
+    "emoji"    => "📚",
+    "color"    => "#FF9900",
+    "tagline"  => "Kindle Unlimited kündigen — schnell &amp; einfach",
+    "about"    => "Kindle Unlimited (9,99 €/Monat) bietet unbegrenzten Zugriff auf &uuml;ber 4 Millionen E-Books, Audible-H&ouml;rb&uuml;cher und Magazine. Kündigung jederzeit &uuml;ber Ihr Amazon-Konto m&ouml;glich.",
+    "refund"   => "Amazon erstattet Kindle Unlimited gew&ouml;hnlich nicht f&uuml;r den laufenden Monat. Bei versehentlicher Verl&auml;ngerung k&ouml;nnen Sie den Amazon-Kundendienst kontaktieren.",
+    "platforms" => [
+      "web" => [
+        "label" => "Amazon-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>amazon.de</strong> und melden Sie sich an",
+          "Klicken Sie auf <strong>Konto &amp; Listen → Meine Mitgliedschaften &amp; Abonnements</strong>",
+          "Finden Sie <strong>Kindle Unlimited</strong> und klicken Sie auf <strong>Kündigen</strong>",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "Alternativ: Einstellungen → Konto → Kindle Unlimited verwalten direkt in der Kindle-App.",
+      ],
+    ],
+    "after_cancel" => [
+      "Zugriff bleibt bis zum Ende des bezahlten Zeitraums bestehen",
+      "Heruntergeladene Titel werden nach Ablauf gesperrt",
+      "Gek&auml;ufte Kindle-B&uuml;cher bleiben dauerhaft erhalten",
+      "Kostenloses Kindle-Programm f&uuml;r Prime-Mitglieder bleibt verf&uuml;gbar",
+    ],
+    "faq" => [
+      ["Verliere ich meine heruntergeladenen Kindle-B&uuml;cher nach der K&uuml;ndigung?",
+       "Nur Kindle Unlimited-Titel werden gesperrt. Gek&auml;ufte B&uuml;cher und Ihre pers&ouml;nlichen Dokumente bleiben immer auf Ihrem Kindle verf&uuml;gbar."],
+      ["Kann ich Kindle Unlimited nach der K&uuml;ndigung erneut abonnieren?",
+       "Ja, jederzeit. Amazon bietet neuen und zur&uuml;ckkehrenden Abonnenten h&auml;ufig Probeangebote an."],
+    ],
+    "related" => ["audible", "blinkist", "amazon-prime", "spotify"],
+  ],
+
+  "nordvpn" => [
+    "name"     => "NordVPN",
+    "emoji"    => "🔒",
+    "color"    => "#4687FF",
+    "tagline"  => "NordVPN kündigen und Geld zur&uuml;ckbekommen",
+    "about"    => "NordVPN bietet 1-Monats-, 1-Jahres- und 2-Jahres-Pl&auml;ne an. Alle Pl&auml;ne beinhalten eine 30-Tage-Geld-zur&uuml;ck-Garantie — einfach den Support kontaktieren.",
+    "refund"   => "NordVPN bietet eine 30-Tage-Geld-zur&uuml;ck-Garantie. Kontaktieren Sie den Support &uuml;ber den Live-Chat auf nordvpn.com innerhalb von 30 Tagen nach dem Kauf.",
+    "platforms" => [
+      "web" => [
+        "label" => "NordVPN-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>nordvpn.com</strong> und melden Sie sich im My Nord-Konto an",
+          "Klicken Sie auf <strong>Abrechnung</strong> im linken Men&uuml;",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+          "F&uuml;r eine Erstattung: Starten Sie den <strong>Live-Chat</strong> auf nordvpn.com innerhalb von 30 Tagen",
+        ],
+        "note"  => "Die 30-Tage-Geld-zur&uuml;ck-Garantie gilt f&uuml;r alle NordVPN-Pl&auml;ne, auch f&uuml;r 2-Jahres-Abos.",
+      ],
+    ],
+    "after_cancel" => [
+      "VPN-Zugang bleibt bis zum Ablauf des bezahlten Zeitraums aktiv",
+      "Erstattungen bei 30-Tage-Garantie in 5&ndash;10 Werktagen",
+      "Ihr NordVPN-Konto bleibt f&uuml;r k&uuml;nftige Nutzung erhalten",
+    ],
+    "faq" => [
+      ["Wie bekomme ich eine Erstattung von NordVPN?",
+       "Starten Sie einen Live-Chat auf nordvpn.com innerhalb von 30 Tagen nach dem Kauf und beantragen Sie eine R&uuml;ckerstattung gem&auml;&szlig; der 30-Tage-Geld-zur&uuml;ck-Garantie."],
+      ["Verl&auml;ngert sich NordVPN automatisch?",
+       "Ja. Deaktivieren Sie die automatische Verl&auml;ngerung unter My Nord → Abrechnung → Abonnement-Einstellungen, oder kündigen Sie vor dem Verl&auml;ngerungsdatum."],
+    ],
+    "related" => ["surfshark", "expressvpn", "mcafee", "norton"],
+  ],
+
+  "parship" => [
+    "name"     => "Parship",
+    "emoji"    => "💑",
+    "color"    => "#8B1A3A",
+    "tagline"  => "Parship kündigen — Schritt f&uuml;r Schritt",
+    "about"    => "Parship ist eine der f&uuml;hrenden Partnervermittlungen in Deutschland mit Premium-Abonnements ab ca. 34,90 €/Monat. Die K&uuml;ndigung muss schriftlich oder &uuml;ber das Kundenkonto erfolgen.",
+    "refund"   => "Parship erstattet laufende Abonnementzeitr&auml;ume grunds&auml;tzlich nicht. Bei widerrechtlichen Abbuchungen wenden Sie sich an den Parship-Kundenservice unter 040&nbsp;609&nbsp;415&nbsp;90.",
+    "platforms" => [
+      "web" => [
+        "label" => "Parship-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>parship.de</strong> und melden Sie sich an",
+          "Klicken Sie oben rechts auf Ihr <strong>Profilbild → Einstellungen</strong>",
+          "W&auml;hlen Sie <strong>Mitgliedschaft → Mitgliedschaft k&uuml;ndigen</strong>",
+          "Folgen Sie den Anweisungen und best&auml;tigen Sie die K&uuml;ndigung",
+          "Sie erhalten eine <strong>Best&auml;tigungs-E-Mail</strong> — bitte aufbewahren",
+        ],
+        "note"  => "Kündigen Sie mindestens 3 Tage vor Verl&auml;ngerungsdatum. Die K&uuml;ndigungsfrist betr&auml;gt laut AGB in der Regel eine Woche vor Ablauf.",
+      ],
+      "mail" => [
+        "label" => "Per Post oder E-Mail",
+        "icon"  => "✉️",
+        "steps" => [
+          "Schreiben Sie eine K&uuml;ndigung mit Name, Adresse, Geburtsdatum und Mitgliedsnummer",
+          "Senden Sie diese per E-Mail an <strong>service@parship.de</strong>",
+          "Oder per Einschreiben an: Parship GmbH, Speersort 10, 20095 Hamburg",
+        ],
+        "note"  => "Der schriftliche Weg ist empfehlenswert als zus&auml;tzliche Absicherung.",
+      ],
+    ],
+    "after_cancel" => [
+      "Premium-Zugang bleibt bis zum Ende der bezahlten Laufzeit aktiv",
+      "Kostenloses Basisprofil bleibt nach Ablauf erhalten",
+      "Nachrichten und Kontakte bleiben im Konto sichtbar",
+    ],
+    "faq" => [
+      ["Was ist die K&uuml;ndigungsfrist bei Parship?",
+       "Laut Parship-AGB m&uuml;ssen Sie mindestens eine Woche vor Ablauf k&uuml;ndigen. Es empfiehlt sich, fr&uuml;hzeitig zu k&uuml;ndigen, um eine automatische Verl&auml;ngerung zu vermeiden."],
+      ["Kann ich Parship im 14-t&auml;gigen Widerrufsrecht k&uuml;ndigen?",
+       "Ja. Bei Online-Abschl&uuml;ssen haben Sie in Deutschland 14 Tage Widerrufsrecht. Widerrufen Sie schriftlich per E-Mail an service@parship.de mit dem Satz: Hiermit widerrufe ich meinen Vertrag."],
+    ],
+    "related" => ["elitepartner", "tinder", "bumble", "netflix"],
+  ],
+
+  "elitepartner" => [
+    "name"     => "ElitePartner",
+    "emoji"    => "💎",
+    "color"    => "#1A1A2E",
+    "tagline"  => "ElitePartner kündigen — so geht es",
+    "about"    => "ElitePartner ist eine Premium-Partneragentur in Deutschland f&uuml;r Akademiker und Berufst&auml;tige mit Abonnements ab ca. 39,90 €/Monat. K&uuml;ndigung per Online-Formular oder schriftlich.",
+    "refund"   => "ElitePartner erstattet keine laufenden Abonnementzeitr&auml;ume. Bei Widerruf innerhalb von 14 Tagen nach Vertragsschluss erhalten Sie eine vollst&auml;ndige R&uuml;ckerstattung.",
+    "platforms" => [
+      "web" => [
+        "label" => "ElitePartner-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>elitepartner.de</strong> und melden Sie sich an",
+          "Klicken Sie auf <strong>Mein Profil → Einstellungen → Mitgliedschaft</strong>",
+          "W&auml;hlen Sie <strong>Mitgliedschaft k&uuml;ndigen</strong>",
+          "Best&auml;tigen Sie die K&uuml;ndigung und notieren Sie die Best&auml;tigungsnummer",
+        ],
+        "note"  => "Alternativ k&ouml;nnen Sie per E-Mail an service@elitepartner.de k&uuml;ndigen.",
+      ],
+    ],
+    "after_cancel" => [
+      "Premium-Zugang bleibt bis Laufzeitende aktiv",
+      "Basismitgliedschaft bleibt kostenlos erhalten",
+      "14-t&auml;giges Widerrufsrecht bei Online-Abschluss",
+    ],
+    "faq" => [
+      ["Wie unterscheidet sich ElitePartner von Parship?",
+       "ElitePartner richtet sich speziell an Akademiker und Berufst&auml;tige. Parship spricht ein breiteres Publikum an. Beide sind seri&ouml;se Premium-Partnerb&ouml;rsen mit &auml;hnlichen Preisen."],
+      ["Kann ich ElitePartner nach dem 14-t&auml;gigen Widerrufsrecht k&uuml;ndigen?",
+       "Ja, jederzeit. Die K&uuml;ndigung beendet die automatische Verl&auml;ngerung. Sie behalten den Zugang bis zum Ende der bezahlten Laufzeit."],
+    ],
+    "related" => ["parship", "tinder", "bumble", "spotify"],
+  ],
+
+  "playstation-plus" => [
+    "name"     => "PlayStation Plus",
+    "emoji"    => "🎮",
+    "color"    => "#003087",
+    "tagline"  => "PlayStation Plus kündigen — einfach erkl&auml;rt",
+    "about"    => "PlayStation Plus (Essential 8,99 €/Monat, Extra 13,99 €/Monat, Premium 17,99 €/Monat) bietet Online-Multiplayer, monatliche Gratis-Spiele und einen Spielekatalog.",
+    "refund"   => "Sony erstattet PS Plus grunds&auml;tzlich nicht f&uuml;r den laufenden Zeitraum. Bei unerwarteten Abbuchungen kontaktieren Sie den PlayStation-Support.",
+    "platforms" => [
+      "web" => [
+        "label" => "PlayStation-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>playstation.com/de-de</strong> und melden Sie sich an",
+          "Klicken Sie oben rechts auf Ihr <strong>Profilbild → Abonnements</strong>",
+          "W&auml;hlen Sie <strong>PlayStation Plus</strong>",
+          "Klicken Sie auf <strong>Automatische Verl&auml;ngerung deaktivieren</strong>",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "Das Deaktivieren der automatischen Verl&auml;ngerung k&uuml;ndigt das Abonnement zum Ende des Abrechnungszeitraums.",
+      ],
+      "console" => [
+        "label" => "PS4 / PS5-Konsole",
+        "icon"  => "🕹️",
+        "steps" => [
+          "Gehen Sie zu <strong>Einstellungen → Benutzerverwaltung → Kontoinfo → PlayStation-Abonnements</strong>",
+          "W&auml;hlen Sie <strong>PlayStation Plus</strong>",
+          "W&auml;hlen Sie <strong>Automatische Verl&auml;ngerung deaktivieren</strong>",
+        ],
+        "note"  => "Funktioniert auf PS4 und PS5.",
+      ],
+    ],
+    "after_cancel" => [
+      "PS Plus-Zugang bleibt bis Ende des bezahlten Zeitraums aktiv",
+      "Online-Multiplayer endet nach Ablauf",
+      "Monatliche Gratis-Spiele werden gesperrt (bleiben bei Reaktivierung verf&uuml;gbar)",
+    ],
+    "faq" => [
+      ["Verliere ich meine PS Plus-Gratis-Spiele bei der K&uuml;ndigung?",
+       "Ja &mdash; PS Plus Essential-Spiele erfordern ein aktives Abonnement. Sie kehren in Ihre Bibliothek zur&uuml;ck, wenn Sie erneut abonnieren."],
+      ["Kann ich PS Plus auf der PS5 k&uuml;ndigen?",
+       "Auf der PS5: Einstellungen → Benutzer und Konten → Konto → Zahlung und Abonnements → Abonnements → Automatische Verl&auml;ngerung deaktivieren."],
+    ],
+    "related" => ["xbox-game-pass", "ea-play", "discord-nitro", "netflix"],
+  ],
+
+  "xbox-game-pass" => [
+    "name"     => "Xbox Game Pass",
+    "emoji"    => "🟢",
+    "color"    => "#107C10",
+    "tagline"  => "Xbox Game Pass kündigen — schnell &amp; einfach",
+    "about"    => "Xbox Game Pass Ultimate (14,99 €/Monat) bietet &uuml;ber 100 Spiele, Xbox Live Gold und PC Game Pass. K&uuml;ndigung &uuml;ber Ihr Microsoft-Konto online.",
+    "refund"   => "Microsoft erstattet Game Pass nach dem Start des Abrechnungszeitraums nicht. Bei unerwarteten Abbuchungen kontaktieren Sie den Microsoft-Support.",
+    "platforms" => [
+      "web" => [
+        "label" => "Microsoft-Konto",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>account.microsoft.com/services</strong> und melden Sie sich an",
+          "Finden Sie <strong>Xbox Game Pass</strong> und klicken Sie auf <strong>Verwalten</strong>",
+          "Klicken Sie auf <strong>K&uuml;ndigen</strong>",
+          "W&auml;hlen Sie einen Grund und klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Microsoft bietet vor der K&uuml;ndigung h&auml;ufig einen Gratismonat oder Rabatt an &mdash; ablehnen, um zur Best&auml;tigung zu gelangen.",
+      ],
+      "console" => [
+        "label" => "Xbox-Konsole",
+        "icon"  => "🕹️",
+        "steps" => [
+          "Dr&uuml;cken Sie die <strong>Xbox-Taste → Profil &amp; System → Einstellungen → Konto → Abonnements</strong>",
+          "W&auml;hlen Sie <strong>Xbox Game Pass</strong>",
+          "W&auml;hlen Sie <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Funktioniert auf Xbox One, Series S und Series X.",
+      ],
+    ],
+    "after_cancel" => [
+      "Game Pass-Zugang bleibt bis Ende des bezahlten Zeitraums aktiv",
+      "Heruntergeladene Game Pass-Spiele werden nach Ablauf gesperrt",
+      "Cloud-Spielst&auml;nde bleiben erhalten",
+      "Separat gekaufte Spiele sind nicht betroffen",
+    ],
+    "faq" => [
+      ["Verliere ich meine Spielst&auml;nde bei der K&uuml;ndigung?",
+       "Nein &mdash; Cloud-Spielst&auml;nde bleiben erhalten. Sie k&ouml;nnen dort weiterspielen, wo Sie aufgeh&ouml;rt haben, wenn Sie erneut abonnieren."],
+      ["Wie k&uuml;ndige ich Xbox Game Pass auf dem PC?",
+       "&Ouml;ffnen Sie die Xbox-App auf Ihrem PC → klicken Sie auf Ihr Profil → Xbox Game Pass → Verwalten → K&uuml;ndigen. Oder &uuml;ber account.microsoft.com/services."],
+    ],
+    "related" => ["playstation-plus", "ea-play", "discord-nitro", "twitch"],
+  ],
+
+  "babbel" => [
+    "name"     => "Babbel",
+    "emoji"    => "🗣️",
+    "color"    => "#43A047",
+    "tagline"  => "Babbel-Abonnement kündigen",
+    "about"    => "Babbel bietet Sprachkurse in 14 Sprachen f&uuml;r 12,99 €/Monat (monatlich) oder g&uuml;nstiger im Jahresabo. K&uuml;ndigung jederzeit &uuml;ber die Kontoeinstellungen m&ouml;glich.",
+    "refund"   => "Babbel gew&auml;hrt Neukunden eine 20-t&auml;gige Geld-zur&uuml;ck-Garantie. Kontaktieren Sie support@babbel.com innerhalb von 20 Tagen nach dem ersten Kauf.",
+    "platforms" => [
+      "web" => [
+        "label" => "Babbel-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>babbel.com</strong> und melden Sie sich an",
+          "Klicken Sie oben rechts auf Ihren <strong>Namen → Konto</strong>",
+          "Klicken Sie auf <strong>Abonnement</strong>",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "F&uuml;r eine Erstattung innerhalb von 20 Tagen schreiben Sie an support@babbel.com.",
+      ],
+    ],
+    "after_cancel" => [
+      "Zugriff bis Ende des bezahlten Zeitraums",
+      "Lernfortschritt und Streak bleiben erhalten",
+      "Einige kostenlose Lektionen bleiben verf&uuml;gbar",
+    ],
+    "faq" => [
+      ["Wie unterscheidet sich Babbel von Duolingo?",
+       "Babbel konzentriert sich auf praxisnahe Gespr&auml;chsf&auml;higkeit mit Grammatikfokus. Duolingo ist kostenlos und spielerischer. Babbel wird oft f&uuml;r schnelleren Fortschritt im Alltag empfohlen."],
+      ["Gilt die 20-Tage-Garantie auch bei Verl&auml;ngerung?",
+       "Die Garantie gilt in der Regel nur f&uuml;r den Erstkauf. Bei Verl&auml;ngerungen wenden Sie sich an support@babbel.com &mdash; die Entscheidung liegt beim Support-Team."],
+    ],
+    "related" => ["duolingo", "blinkist", "audible", "amazon-prime"],
+  ],
+
+  "apple-music" => [
+    "name"     => "Apple Music",
+    "emoji"    => "🎵",
+    "color"    => "#FC3C44",
+    "tagline"  => "Apple Music kündigen — in wenigen Schritten",
+    "about"    => "Apple Music kostet 10,99 €/Monat (Einzel) oder 16,99 €/Monat (Familie) und bietet &uuml;ber 100 Millionen Songs. K&uuml;ndigung &uuml;ber die Einstellungen Ihres Apple-Ger&auml;ts.",
+    "refund"   => "Apple Music-Abonnements werden von Apple verwaltet. Erstattungen k&ouml;nnen &uuml;ber reportaproblem.apple.com beantragt werden &mdash; versehentliche Abbuchungen werden h&auml;ufig innerhalb von 48 Stunden genehmigt.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "iPhone / iPad",
+        "icon"  => "📱",
+        "steps" => [
+          "Gehen Sie zu <strong>Einstellungen → [Ihr Name] → Abonnements</strong>",
+          "Tippen Sie auf <strong>Apple Music</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+          "Tippen Sie auf <strong>Best&auml;tigen</strong>",
+        ],
+        "note"  => "Wenn Apple Music nicht aufgelistet ist, sind Sie m&ouml;glicherweise &uuml;ber Familienfreigabe abonniert. Bitten Sie den Familienorganisator zu k&uuml;ndigen.",
+      ],
+      "mac" => [
+        "label" => "Mac (Musik-App)",
+        "icon"  => "🖥️",
+        "steps" => [
+          "&Ouml;ffnen Sie die <strong>Musik-App</strong>",
+          "Klicken Sie auf <strong>Account → Mein Konto anzeigen</strong>",
+          "Scrollen Sie zu <strong>Abonnements</strong> und klicken Sie auf <strong>Verwalten</strong>",
+          "Klicken Sie auf <strong>Bearbeiten</strong> neben Apple Music",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Funktioniert auf Mac mit macOS Catalina oder h&ouml;her.",
+      ],
+    ],
+    "after_cancel" => [
+      "Apple Music-Zugang bis Ende des Abrechnungszeitraums",
+      "Offline heruntergeladene Musik wird gesperrt",
+      "Playlists bleiben erhalten, Titel als nicht verf&uuml;gbar markiert",
+      "Separat gekaufte Musik bleibt immer zug&auml;nglich",
+    ],
+    "faq" => [
+      ["Verliere ich meine Playlists bei der K&uuml;ndigung?",
+       "Ihre Playlists bleiben in der Musik-App, die Titel sind jedoch nicht abspielbar. Bei erneutem Abonnieren sind sie wieder verf&uuml;gbar."],
+      ["Wie k&uuml;ndige ich Apple One (das Apple Music enth&auml;lt)?",
+       "Gehen Sie zu Einstellungen → [Ihr Name] → Abonnements → Apple One → Abonnement k&uuml;ndigen. Dies beendet das gesamte Bundle."],
+    ],
+    "related" => ["spotify", "amazon-prime", "audible", "youtube-premium"],
+  ],
+
+  "tinder" => [
+    "name"     => "Tinder",
+    "emoji"    => "🔥",
+    "color"    => "#FE3C72",
+    "tagline"  => "Tinder Gold oder Plus kündigen",
+    "about"    => "Tinder Plus (ab 9,99 €/Monat), Tinder Gold und Platinum bieten unbegrenzte Likes, Passport und andere Premium-Funktionen. K&uuml;ndigung &uuml;ber App Store oder Google Play.",
+    "refund"   => "Tinder-Abonnements werden &uuml;ber Apple oder Google abgewickelt. Erstattungen erfolgen &uuml;ber reportaproblem.apple.com (iOS) oder den Google Play-Erstattungsprozess.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "📱",
+        "steps" => [
+          "Gehen Sie zu <strong>Einstellungen → [Ihr Name] → Abonnements</strong>",
+          "Tippen Sie auf <strong>Tinder</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Dies ist der prim&auml;re Weg zur K&uuml;ndigung auf dem iPhone.",
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "&Ouml;ffnen Sie den <strong>Google Play Store → Profil → Zahlungen &amp; Abonnements → Abonnements</strong>",
+          "Tippen Sie auf <strong>Tinder</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Google Play verwaltet Tinder-Abonnements auf Android.",
+      ],
+    ],
+    "after_cancel" => [
+      "Premium-Funktionen bis Ende des Abrechnungszeitraums verf&uuml;gbar",
+      "Profil und Matches bleiben erhalten",
+      "R&uuml;ckkehr zur kostenlosen Tinder-Version (begrenzte Likes)",
+      "App-L&ouml;schung kündigt das Abonnement NICHT",
+    ],
+    "faq" => [
+      ["K&uuml;ndigt das L&ouml;schen der Tinder-App mein Abonnement?",
+       "Nein. Sie m&uuml;ssen &uuml;ber den App Store oder Google Play k&uuml;ndigen. Das L&ouml;schen der App beendet keine Abbuchungen."],
+      ["Wie l&ouml;sche ich mein Tinder-Konto?",
+       "In der Tinder-App: Einstellungen → Konto → Konto l&ouml;schen. Dies ist von der Abonnement-K&uuml;ndigung getrennt."],
+    ],
+    "related" => ["bumble", "parship", "elitepartner", "netflix"],
+  ],
+
+  "bumble" => [
+    "name"     => "Bumble",
+    "emoji"    => "🐝",
+    "color"    => "#FFD01F",
+    "tagline"  => "Bumble Boost oder Premium kündigen",
+    "about"    => "Bumble Boost (ab ca. 14,99 €/Monat) und Bumble Premium bieten erweiterte Filter, unbegrenzte Swipes und die R&uuml;ckspul-Funktion. K&uuml;ndigung &uuml;ber App Store oder Google Play.",
+    "refund"   => "Bumble-Abonnements werden von Apple oder Google verwaltet. Erstattungen &uuml;ber reportaproblem.apple.com (iOS) oder den Google Play-Erstattungsprozess.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "📱",
+        "steps" => [
+          "Gehen Sie zu <strong>Einstellungen → [Ihr Name] → Abonnements</strong>",
+          "Tippen Sie auf <strong>Bumble</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Nur diese Methode verwenden, wenn &uuml;ber den App Store abonniert.",
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "&Ouml;ffnen Sie den <strong>Google Play Store → Profil → Zahlungen &amp; Abonnements → Abonnements</strong>",
+          "Tippen Sie auf <strong>Bumble</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Google Play verwaltet Bumble-Abonnements auf Android.",
+      ],
+    ],
+    "after_cancel" => [
+      "Premium-Funktionen bis Ende des Abrechnungszeitraums",
+      "Profil und Matches bleiben erhalten",
+      "R&uuml;ckkehr zur kostenlosen Version",
+    ],
+    "faq" => [
+      ["K&uuml;ndigt das L&ouml;schen der Bumble-App mein Abonnement?",
+       "Nein. K&uuml;ndigen Sie &uuml;ber den App Store oder Google Play. Das L&ouml;schen der App allein stoppt keine Abbuchungen."],
+      ["Wie unterscheidet sich Bumble von Tinder?",
+       "Bei Bumble m&uuml;ssen Frauen bei heterosexuellen Matches zuerst schreiben. Bumble gilt als seri&ouml;ser und hat weniger Spam als Tinder."],
+    ],
+    "related" => ["tinder", "parship", "elitepartner", "spotify"],
+  ],
+
+  "ea-play" => [
+    "name"     => "EA Play",
+    "emoji"    => "🎮",
+    "color"    => "#FF4747",
+    "tagline"  => "EA Play kündigen",
+    "about"    => "EA Play (4,99 €/Monat oder 29,99 €/Jahr) bietet Zugang zu EA-Spielen, fr&uuml;hen Testversionen und 10 % Rabatt. EA Play Pro (14,99 €/Monat) gibt vollen Zugang zu neuen EA-Titeln auf dem PC.",
+    "refund"   => "EA bietet keine Erstattungen f&uuml;r EA Play-Abonnements an. Kontaktieren Sie den EA-Hilfe-Service unter help.ea.com f&uuml;r Abrechnungsanfragen.",
+    "platforms" => [
+      "web" => [
+        "label" => "EA-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>ea.com</strong> und melden Sie sich an",
+          "Gehen Sie zu <strong>account.ea.com → Abonnements</strong>",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong> neben EA Play",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "EA Play auf Xbox wird &uuml;ber Microsoft verwaltet &mdash; k&uuml;ndigen Sie unter account.microsoft.com/services.",
+      ],
+    ],
+    "after_cancel" => [
+      "EA Play-Zugang bis Ende des Abrechnungszeitraums",
+      "Spiele-Vault-Titel werden nach Ablauf gesperrt",
+      "Separat gekaufte Spiele sind nicht betroffen",
+    ],
+    "faq" => [
+      ["Ist EA Play in Xbox Game Pass enthalten?",
+       "Ja. EA Play ist in Xbox Game Pass Ultimate und PC Game Pass kostenlos enthalten. Sie ben&ouml;tigen kein separates EA Play-Abonnement, wenn Sie Game Pass Ultimate haben."],
+      ["Wie k&uuml;ndige ich EA Play auf der PS5?",
+       "Gehen Sie zu Einstellungen → Benutzerverwaltung → Kontoinfo → PlayStation-Abonnements → EA Play → K&uuml;ndigen."],
+    ],
+    "related" => ["xbox-game-pass", "playstation-plus", "discord-nitro", "netflix"],
+  ],
+
+  "apple-icloud" => [
+    "name"     => "iCloud+",
+    "emoji"    => "☁️",
+    "color"    => "#1D6FF3",
+    "tagline"  => "iCloud-Speicher kündigen — so geht es",
+    "about"    => "iCloud+-Speicherpl&auml;ne kosten 0,99 €/Monat (50 GB), 2,99 €/Monat (200 GB) oder 9,99 €/Monat (2 TB). Downgrade auf den kostenlosen 5-GB-Plan jederzeit m&ouml;glich.",
+    "refund"   => "Apple erstattet iCloud+-Speicherpl&auml;ne in der Regel nicht. Kontaktieren Sie den Apple-Support unter apple.com/de/support bei falschen Abbuchungen.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "iPhone / iPad",
+        "icon"  => "📱",
+        "steps" => [
+          "Gehen Sie zu <strong>Einstellungen → [Ihr Name] → iCloud</strong>",
+          "Tippen Sie auf <strong>Speicher verwalten</strong>",
+          "Tippen Sie auf <strong>Speicherplan &auml;ndern</strong>",
+          "W&auml;hlen Sie <strong>Downgrade-Optionen</strong>",
+          "W&auml;hlen Sie den <strong>kostenlosen 5-GB-Plan</strong>",
+          "Best&auml;tigen Sie mit Ihrem Apple-ID-Passwort",
+        ],
+        "note"  => "Wenn Sie mehr als 5 GB gespeichert haben, werden Ihre Dateien nicht sofort gel&ouml;scht, aber neue Inhalte werden nicht mehr synchronisiert.",
+      ],
+    ],
+    "after_cancel" => [
+      "Speicherplan wird zum Ende des Abrechnungszeitraums herabgestuft",
+      "Dateien werden NICHT sofort gel&ouml;scht",
+      "iCloud Backup und Foto-Sync stoppen bei &Uuml;berschreitung von 5 GB",
+      "Wichtige Dateien vorher lokal herunterladen",
+    ],
+    "faq" => [
+      ["Werden meine Fotos gel&ouml;scht, wenn ich iCloud+ k&uuml;ndige?",
+       "Nein, nicht sofort. Aber iCloud-Fotos synchronisiert keine neuen Bilder mehr, sobald Sie 5 GB &uuml;berschreiten. Laden Sie Fotos vorher auf Ihren Mac oder ein externes Laufwerk herunter."],
+      ["Was ist der Unterschied zwischen iCloud und iCloud+?",
+       "iCloud+ ist Apples kostenpflichtiges Speicher-Upgrade &uuml;ber die kostenlosen 5 GB hinaus. Es beinhaltet auch iCloud Private Relay und E-Mail-Adressen verbergen."],
+    ],
+    "related" => ["google-one", "dropbox", "apple-music", "microsoft-365"],
+  ],
+
+  "surfshark" => [
+    "name"     => "Surfshark",
+    "emoji"    => "🦈",
+    "color"    => "#1B2B5A",
+    "tagline"  => "Surfshark kündigen und Geld zur&uuml;ckbekommen",
+    "about"    => "Surfshark VPN bietet 1-Monats-, 1-Jahres- und 2-Jahres-Pl&auml;ne mit einer 30-Tage-Geld-zur&uuml;ck-Garantie. K&uuml;ndigung &uuml;ber Ihr Konto oder per Live-Chat.",
+    "refund"   => "Surfshark bietet eine 30-Tage-Geld-zur&uuml;ck-Garantie. Kontaktieren Sie den Support via Live-Chat auf surfshark.com innerhalb von 30 Tagen nach dem Kauf.",
+    "platforms" => [
+      "web" => [
+        "label" => "Surfshark-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>surfshark.com</strong> und melden Sie sich an",
+          "Klicken Sie auf <strong>Mein Konto → Abrechnung</strong>",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+          "F&uuml;r eine Erstattung: <strong>Live-Chat</strong> auf surfshark.com innerhalb von 30 Tagen nutzen",
+        ],
+        "note"  => "Die 30-Tage-Garantie von Surfshark ist der einfachste Weg, eine vollst&auml;ndige R&uuml;ckerstattung zu erhalten.",
+      ],
+    ],
+    "after_cancel" => [
+      "VPN-Zugang bis Ende des bezahlten Zeitraums aktiv",
+      "App verbindet sich nach Ablauf nicht mehr",
+      "Erstattungen in 5&ndash;10 Werktagen",
+    ],
+    "faq" => [
+      ["Wie bekomme ich eine Surfshark-Erstattung?",
+       "Starten Sie einen Live-Chat auf surfshark.com innerhalb von 30 Tagen nach dem Kauf und beantragen Sie eine R&uuml;ckerstattung. Der Vorgang dauert 5&ndash;10 Werktage."],
+      ["Verl&auml;ngert sich Surfshark automatisch?",
+       "Ja. Deaktivieren Sie die automatische Verl&auml;ngerung unter Mein Konto → Abrechnung → Abonnement, oder k&uuml;ndigen Sie vor dem Verl&auml;ngerungsdatum."],
+    ],
+    "related" => ["nordvpn", "expressvpn", "mcafee", "norton"],
+  ],
+
+  "expressvpn" => [
+    "name"     => "ExpressVPN",
+    "emoji"    => "🔐",
+    "color"    => "#DA3940",
+    "tagline"  => "ExpressVPN kündigen und Geld zur&uuml;ckerhalten",
+    "about"    => "ExpressVPN bietet 1-Monats-, 1-Jahres-Pl&auml;ne und alle beinhalten eine 30-Tage-Geld-zur&uuml;ck-Garantie. K&uuml;ndigung &uuml;ber Ihr Konto oder per Live-Chat.",
+    "refund"   => "ExpressVPN bietet eine 30-Tage-Geld-zur&uuml;ck-Garantie. Kontaktieren Sie den Live-Chat auf expressvpn.com innerhalb von 30 Tagen.",
+    "platforms" => [
+      "web" => [
+        "label" => "ExpressVPN-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>expressvpn.com</strong> und melden Sie sich an",
+          "Klicken Sie auf Ihre <strong>Konto-E-Mail → Abonnement verwalten</strong>",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+          "F&uuml;r Erstattung: <strong>Live-Chat</strong> auf expressvpn.com innerhalb von 30 Tagen nutzen",
+        ],
+        "note"  => "Die 30-Tage-Geld-zur&uuml;ck-Garantie gilt f&uuml;r alle ExpressVPN-Pl&auml;ne.",
+      ],
+    ],
+    "after_cancel" => [
+      "VPN-Zugang bis Ende des bezahlten Zeitraums aktiv",
+      "Erstattungen &uuml;ber Live-Chat innerhalb von 30 Tagen",
+    ],
+    "faq" => [
+      ["Wie erhalte ich eine Erstattung von ExpressVPN?",
+       "Starten Sie einen Live-Chat auf expressvpn.com und beantragen Sie innerhalb von 30 Tagen eine R&uuml;ckerstattung. Wird in der Regel in 5&ndash;7 Werktagen bearbeitet."],
+      ["Wie unterscheidet sich ExpressVPN von NordVPN?",
+       "ExpressVPN ist schneller und einfacher auf Routern zu nutzen, aber teurer. NordVPN ist g&uuml;nstiger f&uuml;r langfristige Pl&auml;ne. Beide bieten 30-Tage-Geld-zur&uuml;ck-Garantien."],
+    ],
+    "related" => ["nordvpn", "surfshark", "mcafee", "norton"],
+  ],
+
+  "google-one" => [
+    "name"     => "Google One",
+    "emoji"    => "☁️",
+    "color"    => "#4285F4",
+    "tagline"  => "Google One kündigen",
+    "about"    => "Google One (ab 1,99 €/Monat f&uuml;r 100 GB) erweitert Ihren Google-Speicher f&uuml;r Gmail, Drive und Fotos. K&uuml;ndigung jederzeit &uuml;ber Ihr Google-Konto m&ouml;glich.",
+    "refund"   => "Google erstattet Google One in der Regel nicht f&uuml;r den laufenden Zeitraum. K&uuml;ndigen Sie vor dem Verl&auml;ngerungsdatum. Kontaktieren Sie den Google-Support bei falschen Abbuchungen.",
+    "platforms" => [
+      "web" => [
+        "label" => "Google-Konto",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>one.google.com</strong> und melden Sie sich an",
+          "Klicken Sie auf <strong>Einstellungen</strong> im linken Bereich",
+          "Scrollen Sie zu <strong>Mitgliedschaft k&uuml;ndigen</strong>",
+          "Klicken Sie auf <strong>Mitgliedschaft k&uuml;ndigen</strong> und best&auml;tigen Sie",
+        ],
+        "note"  => "Das K&uuml;ndigen setzt Ihren Speicher auf den kostenlosen 15-GB-Grenzwert zur&uuml;ck. Ihre Dateien werden nicht gel&ouml;scht, aber neue k&ouml;nnen nicht hochgeladen werden.",
+      ],
+    ],
+    "after_cancel" => [
+      "Speicherplan bis Ende des Abrechnungszeitraums aktiv",
+      "Konto kehrt nach Ablauf zu kostenlosen 15 GB zur&uuml;ck",
+      "Dateien &uuml;ber 15 GB werden schreibgesch&uuml;tzt &mdash; nicht gel&ouml;scht",
+      "&Uuml;berz&auml;hlige Dateien l&ouml;schen oder herunterladen",
+    ],
+    "faq" => [
+      ["Werden meine Google Fotos gel&ouml;scht, wenn ich Google One k&uuml;ndige?",
+       "Nein. Fotos und Dateien werden nicht gel&ouml;scht. Wenn Sie jedoch mehr als 15 GB gespeichert haben, k&ouml;nnen Sie keine neuen Inhalte hochladen."],
+      ["Kann ich Google One-Speicher mit der Familie teilen?",
+       "Ja. Pl&auml;ne ab 200 GB k&ouml;nnen &uuml;ber Google Family mit bis zu 5 Familienmitgliedern geteilt werden. Das K&uuml;ndigen des Plans entzieht allen Mitgliedern den zus&auml;tzlichen Speicher."],
+    ],
+    "related" => ["apple-icloud", "dropbox", "microsoft-365", "amazon-prime"],
+  ],
+
+  "dropbox" => [
+    "name"     => "Dropbox",
+    "emoji"    => "📦",
+    "color"    => "#0061FF",
+    "tagline"  => "Dropbox Plus kündigen",
+    "about"    => "Dropbox Plus (11,99 €/Monat) bietet 2 TB Speicher, Offline-Zugriff und 180-t&auml;gige Dateiwiederherstellung. K&uuml;ndigung &uuml;ber Ihre Dropbox-Kontoeinstellungen.",
+    "refund"   => "Jahrespl&auml;ne k&ouml;nnen innerhalb von 30 Tagen nach Verl&auml;ngerung anteilig erstattet werden. Monatspl&auml;ne werden nicht erstattet. Kontaktieren Sie support@dropbox.com.",
+    "platforms" => [
+      "web" => [
+        "label" => "Dropbox-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>dropbox.com</strong> und melden Sie sich an",
+          "Klicken Sie oben rechts auf Ihren <strong>Avatar → Einstellungen</strong>",
+          "Klicken Sie auf den Tab <strong>Plan</strong>",
+          "Scrollen Sie nach unten und klicken Sie auf <strong>Plan k&uuml;ndigen</strong>",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "Das Konto wechselt zum kostenlosen Plan (2 GB). Dateien &uuml;ber dem Limit werden schreibgesch&uuml;tzt, aber nicht gel&ouml;scht.",
+      ],
+    ],
+    "after_cancel" => [
+      "Bezahlte Funktionen bis Ende des Zeitraums aktiv",
+      "Konto wechselt zum kostenlosen Plan (2 GB Speicher)",
+      "Dateien &uuml;ber 2 GB werden schreibgesch&uuml;tzt",
+      "Jahresplan innerhalb von 30 Tagen anteilig erstattungsf&auml;hig",
+    ],
+    "faq" => [
+      ["Werden meine Dateien gel&ouml;scht, wenn ich Dropbox k&uuml;ndige?",
+       "Nein. Ihre Dateien werden nicht gel&ouml;scht. Das Konto wechselt zum kostenlosen 2-GB-Plan. Dateien &uuml;ber dem Limit sind schreibgesch&uuml;tzt, bis Sie Speicherplatz freigeben oder erneut abonnieren."],
+      ["Kann ich eine Dropbox-Erstattung erhalten?",
+       "Jahrespl&auml;ne k&ouml;nnen innerhalb von 30 Tagen nach Verl&auml;ngerung anteilig erstattet werden. Wenden Sie sich an dropbox.com/support f&uuml;r Erstattungsanfragen."],
+    ],
+    "related" => ["google-one", "apple-icloud", "microsoft-365", "canva"],
+  ],
+
+  "discord-nitro" => [
+    "name"     => "Discord Nitro",
+    "emoji"    => "💬",
+    "color"    => "#5865F2",
+    "tagline"  => "Discord Nitro kündigen",
+    "about"    => "Discord Nitro (9,99 €/Monat oder 99,99 €/Jahr) bietet animierte Avatare, benutzerdefinierte Emojis, HD-Video und Server-Boosts. K&uuml;ndigung &uuml;ber die Discord-App oder Website.",
+    "refund"   => "Discord bietet eine anteilige Erstattung, wenn Sie innerhalb von 5 Tagen nach Kauf oder Verl&auml;ngerung k&uuml;ndigen. Kontaktieren Sie den Discord-Support unter discord.com/support.",
+    "platforms" => [
+      "web" => [
+        "label" => "Discord App / Website",
+        "icon"  => "💻",
+        "steps" => [
+          "&Ouml;ffnen Sie <strong>Discord</strong> und klicken Sie unten links auf das <strong>Zahnrad-Symbol (Benutzereinstellungen)</strong>",
+          "Klicken Sie auf <strong>Abonnements</strong> im linken Men&uuml;",
+          "Klicken Sie auf <strong>K&uuml;ndigen</strong> neben Discord Nitro",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "Funktioniert in der Desktop-App und im Browser unter discord.com.",
+      ],
+    ],
+    "after_cancel" => [
+      "Nitro-Vorteile bis Ende des Abrechnungszeitraums aktiv",
+      "Animierter Avatar wechselt zu statischem Bild",
+      "Benutzerdefinierte Emojis werden serverübergreifend deaktiviert",
+      "Server-Boosts durch Nitro werden entfernt",
+    ],
+    "faq" => [
+      ["Was passiert mit meinen Server-Boosts, wenn ich Nitro k&uuml;ndige?",
+       "Server-Boosts, die durch Ihr Nitro-Abonnement bereitgestellt wurden, werden nach Ablauf entfernt. Server k&ouml;nnten Vorteile wie bessere Audioqualit&auml;t oder mehr Emoji-Slots verlieren."],
+      ["Was ist der Unterschied zwischen Nitro und Nitro Basic?",
+       "Nitro Basic (2,99 €/Monat) enth&auml;lt gr&ouml;&szlig;ere Uploads und animierte Avatare, aber keine Server-Boosts oder HD-Streaming. Vollst&auml;ndiges Nitro (9,99 €/Monat) enth&auml;lt 2 Server-Boosts und HD-Video."],
+    ],
+    "related" => ["xbox-game-pass", "playstation-plus", "ea-play", "spotify"],
+  ],
+
+  "linkedin" => [
+    "name"     => "LinkedIn Premium",
+    "emoji"    => "💼",
+    "color"    => "#0A66C2",
+    "tagline"  => "LinkedIn Premium kündigen",
+    "about"    => "LinkedIn Premium (ab 29,99 €/Monat) bietet erweiterte Jobsuche, InMail-Nachrichten und Einblicke in Profilbesucher. K&uuml;ndigung &uuml;ber Ihre LinkedIn-Kontoeinstellungen.",
+    "refund"   => "LinkedIn erstattet keine unbenutzten Abonnementzeitr&auml;ume. Bei unerwarteten Abbuchungen wenden Sie sich an den LinkedIn-Support unter linkedin.com/help.",
+    "platforms" => [
+      "web" => [
+        "label" => "LinkedIn-Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>linkedin.com</strong> und melden Sie sich an",
+          "Klicken Sie auf Ihr <strong>Profilfoto → Einstellungen &amp; Datenschutz</strong>",
+          "Klicken Sie auf <strong>Abonnements &amp; Zahlungen</strong>",
+          "Klicken Sie unter Premium-Abonnements auf <strong>Abonnement verwalten</strong>",
+          "Klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "LinkedIn bietet vor der K&uuml;ndigung h&auml;ufig g&uuml;nstigere Pl&auml;ne an &mdash; scrollen Sie an den Angeboten vorbei zum K&uuml;ndigungslink.",
+      ],
+    ],
+    "after_cancel" => [
+      "Premium-Zugang bis Ende des Abrechnungszeitraums",
+      "Profil kehrt zur kostenlosen LinkedIn-Version zur&uuml;ck",
+      "InMail-Guthaben verf&auml;llt bei K&uuml;ndigung",
+      "Verbindungen, Beitr&auml;ge und Profildaten bleiben erhalten",
+    ],
+    "faq" => [
+      ["Verschwinden meine LinkedIn-Daten nach der K&uuml;ndigung von Premium?",
+       "Nein. Alle Verbindungen, Nachrichten und Profilinformationen bleiben erhalten. Nur Premium-Funktionen wie InMail und Profilbesucher werden entfernt."],
+      ["Wie k&uuml;ndige ich LinkedIn Sales Navigator?",
+       "Gehen Sie zu linkedin.com/sales → Admin → Kontoeinstellungen → Abonnement k&uuml;ndigen. Sales Navigator-K&uuml;ndigungen m&uuml;ssen von einem Konto-Admin durchgef&uuml;hrt werden."],
+    ],
+    "related" => ["zoom", "dropbox", "microsoft-365", "canva"],
+  ],
+
+  "zoom" => [
+    "name"     => "Zoom",
+    "emoji"    => "📹",
+    "color"    => "#2D8CFF",
+    "tagline"  => "Zoom Pro kündigen",
+    "about"    => "Zoom Pro (13,99 €/Monat) hebt das 40-Minuten-Limit auf und f&uuml;gt 5 GB Cloud-Aufzeichnung hinzu. K&uuml;ndigung &uuml;ber das Zoom-Kontoportal &mdash; Sie behalten Pro bis zum Ende des Zeitraums.",
+    "refund"   => "Zoom bietet eine anteilige Erstattung, wenn Sie einen Jahresplan vorzeitig k&uuml;ndigen. Monatspl&auml;ne werden nicht erstattet. Kontaktieren Sie zoom.us/billing.",
+    "platforms" => [
+      "web" => [
+        "label" => "Zoom-Webportal",
+        "icon"  => "💻",
+        "steps" => [
+          "Gehen Sie zu <strong>zoom.us</strong> und melden Sie sich in Ihrem Konto an",
+          "Klicken Sie auf <strong>Admin → Kontoverwaltung → Abrechnung</strong>",
+          "Oder gehen Sie direkt zu <strong>zoom.us/billing</strong>",
+          "Finden Sie Ihren aktuellen Plan und klicken Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+          "W&auml;hlen Sie einen Grund und best&auml;tigen Sie",
+        ],
+        "note"  => "Wenn Sie &uuml;ber Apple App Store oder Google Play abonniert haben, k&uuml;ndigen Sie dort.",
+      ],
+    ],
+    "after_cancel" => [
+      "Pro-Funktionen bis Ende des Abrechnungszeitraums aktiv",
+      "Meetings kehren nach Ablauf zum 40-Minuten-Limit zur&uuml;ck",
+      "Cloud-Aufzeichnungen werden 30 Tage nach Downgrade gel&ouml;scht",
+      "Aufzeichnungen vorher herunterladen",
+    ],
+    "faq" => [
+      ["Kann ich Zoom kostenlos nutzen, nachdem ich Pro gek&uuml;ndigt habe?",
+       "Ja. Zoom hat einen kostenlosen Plan mit 100 Teilnehmern und 40-Minuten-Limit f&uuml;r Gruppengespr&auml;che. 1-zu-1-Gespr&auml;che bleiben unbegrenzt."],
+      ["Was passiert mit meinen Zoom-Cloud-Aufzeichnungen bei K&uuml;ndigung?",
+       "Cloud-Aufzeichnungen werden 30 Tage nach Ablauf Ihres Pro-Abonnements gel&ouml;scht. Laden Sie ben&ouml;tigte Aufzeichnungen vorher herunter."],
+    ],
+    "related" => ["microsoft-365", "dropbox", "linkedin", "canva"],
+  ],
+
 ];
 
 // ── Routing ───────────────────────────────────────────────────────────────────
@@ -1173,6 +1897,14 @@ $all_apps = [
   ["Canva","canva"],["ChatGPT","chatgpt"],["McAfee","mcafee"],["Adobe","adobe"],
   ["YouTube Premium","youtube-premium"],["Norton","norton"],["Microsoft 365","microsoft-365"],
   ["Duolingo","duolingo"],["eBay Plus","ebay-plus"],["Blinkist","blinkist"],["Grammarly","grammarly"],
+  ["Kindle Unlimited","kindle-unlimited"],["NordVPN","nordvpn"],
+  ["Parship","parship"],["ElitePartner","elitepartner"],
+  ["PlayStation Plus","playstation-plus"],["Xbox Game Pass","xbox-game-pass"],
+  ["Babbel","babbel"],["Apple Music","apple-music"],
+  ["Discord Nitro","discord-nitro"],["Google One","google-one"],
+  ["Dropbox","dropbox"],["Tinder","tinder"],["EA Play","ea-play"],
+  ["iCloud+","apple-icloud"],["Surfshark","surfshark"],["Bumble","bumble"],
+  ["LinkedIn","linkedin"],["Zoom","zoom"],["ExpressVPN","expressvpn"],
 ];
 
 if (!$app) { http_response_code(404); }

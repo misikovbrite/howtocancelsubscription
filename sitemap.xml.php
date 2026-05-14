@@ -29,7 +29,11 @@ $de_apps = [
   "netflix","spotify","amazon-prime","sky","disney-plus","audible","hellofresh",
   "wow","dazn","paramount-plus","crunchyroll","apple-tv","canva","chatgpt",
   "mcafee","adobe","youtube-premium","norton","microsoft-365","duolingo",
-  "ebay-plus","blinkist","grammarly","amazon-music"
+  "ebay-plus","blinkist","grammarly","amazon-music",
+  "kindle-unlimited","nordvpn","parship","elitepartner","playstation-plus",
+  "xbox-game-pass","babbel","apple-music","discord-nitro","google-one",
+  "dropbox","tinder","ea-play","apple-icloud","surfshark","bumble",
+  "linkedin","zoom","expressvpn"
 ];
 
 $fr_apps = [
