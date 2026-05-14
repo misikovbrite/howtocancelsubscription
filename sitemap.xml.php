@@ -19,7 +19,10 @@ $en_apps = [
   "discovery-plus","apple-arcade","discord-nitro","minecraft","funimation",
   "shudder","ea-play","expressvpn","home-chef","factor-meal","everyplate",
   "blue-apron","mailchimp","babbel","directv","apple-icloud","roblox-premium",
-  "pimsleur","ynab"
+  "pimsleur","ynab",
+  "costco","aaa","adobe-acrobat","google-workspace","lightroom","strava",
+  "figma","whoop","bark","walmart-plus","evernote","myfitnesspal",
+  "proton-vpn","adobe-stock","amc-plus","clickup","notion","acorn-tv"
 ];
 
 $de_apps = [
