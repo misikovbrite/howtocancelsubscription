@@ -14,7 +14,12 @@ $en_apps = [
   "apple-music","instacart","zoom","dropbox","ancestry","chegg","pandora",
   "philo","nordvpn","hinge","nba-league-pass","youtube-premium","eharmony",
   "mlb-tv","masterclass","surfshark","match","mubi","aura","plenty-of-fish",
-  "britbox","noom","peloton"
+  "britbox","noom","peloton",
+  "google-one","rocket-money","coursera","wix","squarespace","scribd",
+  "discovery-plus","apple-arcade","discord-nitro","minecraft","funimation",
+  "shudder","ea-play","expressvpn","home-chef","factor-meal","everyplate",
+  "blue-apron","mailchimp","babbel","directv","apple-icloud","roblox-premium",
+  "pimsleur","ynab"
 ];
 
 $de_apps = [
