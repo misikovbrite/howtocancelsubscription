@@ -22,7 +22,11 @@ $en_apps = [
   "pimsleur","ynab",
   "costco","aaa","adobe-acrobat","google-workspace","lightroom","strava",
   "figma","whoop","bark","walmart-plus","evernote","myfitnesspal",
-  "proton-vpn","adobe-stock","amc-plus","clickup","notion","acorn-tv"
+  "proton-vpn","adobe-stock","amc-plus","clickup","notion","acorn-tv",
+  "onlyfans","substack","patreon","wall-street-journal","washington-post",
+  "aarp","bet-plus","pureflix","midjourney","quickbooks","medium",
+  "monday-com","apple-fitness-plus",
+  "max","vix","showtime","apple-one","plex"
 ];
 
 $de_apps = [
@@ -39,7 +43,10 @@ $de_apps = [
 $fr_apps = [
   "canal-plus","free","sfr","amazon-prime","orange","netflix","spotify",
   "disney-plus","audible","adobe","hbo-max","canva","crunchyroll","deezer",
-  "hellofresh","apple-tv","chatgpt","paramount-plus","youtube-premium"
+  "hellofresh","apple-tv","chatgpt","paramount-plus","youtube-premium",
+  "meetic","playstation-plus","nordvpn","tinder","linkedin","microsoft-365",
+  "xbox-game-pass","google-one","duolingo","apple-music","apple-icloud",
+  "bumble","zoom","dropbox","babbel"
 ];
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

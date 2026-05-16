@@ -22,6 +22,21 @@ $apps = [
   ["slug"=>"crunchyroll",      "name"=>"Crunchyroll",       "cat"=>"streaming",    "vol"=>9500],
   ["slug"=>"hellofresh",       "name"=>"HelloFresh",        "cat"=>"autre",        "vol"=>8000],
   ["slug"=>"paramount-plus",   "name"=>"Paramount+",        "cat"=>"streaming",    "vol"=>7000],
+  ["slug"=>"meetic",           "name"=>"Meetic",            "cat"=>"autre",        "vol"=>390],
+  ["slug"=>"playstation-plus", "name"=>"PlayStation Plus",  "cat"=>"gaming",       "vol"=>320],
+  ["slug"=>"nordvpn",          "name"=>"NordVPN",           "cat"=>"securite",     "vol"=>260],
+  ["slug"=>"tinder",           "name"=>"Tinder",            "cat"=>"autre",        "vol"=>260],
+  ["slug"=>"linkedin",         "name"=>"LinkedIn Premium",  "cat"=>"productivite", "vol"=>210],
+  ["slug"=>"microsoft-365",    "name"=>"Microsoft 365",     "cat"=>"productivite", "vol"=>210],
+  ["slug"=>"xbox-game-pass",   "name"=>"Xbox Game Pass",    "cat"=>"gaming",       "vol"=>110],
+  ["slug"=>"google-one",       "name"=>"Google One",        "cat"=>"productivite", "vol"=>90],
+  ["slug"=>"duolingo",         "name"=>"Duolingo Super",    "cat"=>"autre",        "vol"=>70],
+  ["slug"=>"apple-music",      "name"=>"Apple Music",       "cat"=>"streaming",    "vol"=>50],
+  ["slug"=>"apple-icloud",     "name"=>"iCloud+",           "cat"=>"productivite", "vol"=>50],
+  ["slug"=>"bumble",           "name"=>"Bumble",            "cat"=>"autre",        "vol"=>50],
+  ["slug"=>"zoom",             "name"=>"Zoom",              "cat"=>"productivite", "vol"=>20],
+  ["slug"=>"dropbox",          "name"=>"Dropbox",           "cat"=>"productivite", "vol"=>20],
+  ["slug"=>"babbel",           "name"=>"Babbel",            "cat"=>"autre",        "vol"=>20],
 ];
 
 usort($apps, fn($a,$b) => $b['vol'] - $a['vol']);
