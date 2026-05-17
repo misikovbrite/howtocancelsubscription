@@ -1883,6 +1883,108 @@ $apps_data = [
     "related" => ["microsoft-365", "dropbox", "linkedin", "canva"],
   ],
 
+  "magenta-tv" => [
+    "name"     => "MagentaTV",
+    "emoji"    => "📺",
+    "color"    => "#E20074",
+    "tagline"  => "MagentaTV k&uuml;ndigen",
+    "about"    => "MagentaTV ist der Streamingdienst der Deutschen Telekom mit Live-TV, Mediathek und Zusatzpaketen (ab ca. 10 &euro;/Monat). K&uuml;ndigen Sie online, &uuml;ber die App oder telefonisch.",
+    "refund"   => "MagentaTV bietet in der Regel keine R&uuml;ckerstattung f&uuml;r laufende Abrechnungsperioden. Achten Sie auf die Mindestvertragslaufzeit (oft 12 Monate).",
+    "platforms" => [
+      "web" => [
+        "label" => "Telekom Kundencenter",
+        "icon"  => "💻",
+        "steps" => [
+          "Melden Sie sich auf <strong>telekom.de/kundencenter</strong> an",
+          "W&auml;hlen Sie <strong>Meine Produkte &amp; Dienste</strong>",
+          "Klicken Sie auf <strong>MagentaTV</strong>",
+          "W&auml;hlen Sie <strong>K&uuml;ndigen</strong>",
+          "Best&auml;tigen Sie die K&uuml;ndigung",
+        ],
+        "note"  => "Halten Sie Ihre Kundennummer bereit. Die K&uuml;ndigungsfrist betr&auml;gt in der Regel einen Monat zum Ende der Mindestlaufzeit.",
+      ],
+      "iphone" => [
+        "label" => "Telefonisch",
+        "icon"  => "📞",
+        "steps" => [
+          "Rufen Sie die Telekom-Hotline an: <strong>0800 33 0000</strong> (kostenlos, Mo&ndash;Fr 7&ndash;22 Uhr, Sa 8&ndash;20 Uhr)",
+          "W&auml;hlen Sie den Bereich <strong>MagentaTV / Festnetz</strong>",
+          "Beantragen Sie die K&uuml;ndigung Ihres MagentaTV-Abonnements",
+          "Lassen Sie sich eine schriftliche Best&auml;tigung zusenden",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Zugang bis Ende der bezahlten Laufzeit",
+      "Pr&uuml;fen Sie die Mindestvertragslaufzeit (oft 12 Monate)",
+      "Zus&auml;tzliche Pakete (Filme, Sport) separat k&uuml;ndigen",
+      "Telekom-Router und Hardware nach K&uuml;ndigung zur&uuml;cksenden",
+    ],
+    "faq" => [
+      ["Wie lange ist die K&uuml;ndigungsfrist bei MagentaTV?",
+       "Die K&uuml;ndigungsfrist bei MagentaTV betr&auml;gt einen Monat zum Vertragsende. Bei 12-monatiger Mindestlaufzeit m&uuml;ssen Sie sp&auml;testens einen Monat vor Ablauf k&uuml;ndigen, sonst verl&auml;ngert sich der Vertrag automatisch um 12 Monate."],
+      ["Kann ich MagentaTV ohne Telekom-Vertrag nutzen?",
+       "Ja &mdash; MagentaTV Flex ist ohne Mindestlaufzeit verf&uuml;gbar (monatlich k&uuml;ndbar) und funktioniert auch ohne Telekom-Internetanschluss. Die Grundpakete beginnen ab ca. 10 &euro;/Monat."],
+      ["Was ist der Unterschied zwischen MagentaTV und WOW?",
+       "MagentaTV ist der Dienst der Deutschen Telekom mit Live-TV und linearem Fernsehen. WOW (ehemals Sky Ticket) fokussiert auf Premium-Serien und Sport ohne lineare TV-Kan&auml;le."],
+    ],
+    "related" => ["netflix", "sky", "disney-plus", "wow"],
+  ],
+
+  "deezer" => [
+    "name"     => "Deezer",
+    "emoji"    => "🎵",
+    "color"    => "#FF0092",
+    "tagline"  => "Deezer k&uuml;ndigen",
+    "about"    => "Deezer Premium kostet ca. 10,99 &euro;/Monat (Family: 14,99 &euro;/Monat f&uuml;r bis zu 6 Nutzer). K&uuml;ndigen Sie online &uuml;ber Ihr Deezer-Konto.",
+    "refund"   => "Deezer erstattet in der Regel keine laufenden Abrechnungsperioden. K&uuml;ndigen Sie vor dem Verl&auml;ngerungsdatum.",
+    "platforms" => [
+      "web" => [
+        "label" => "deezer.com",
+        "icon"  => "💻",
+        "steps" => [
+          "Melden Sie sich auf <strong>deezer.com</strong> an",
+          "Klicken Sie oben rechts auf Ihr <strong>Profilbild</strong>",
+          "W&auml;hlen Sie <strong>Mein Konto</strong>",
+          "Klicken Sie auf <strong>Abonnement verwalten</strong>",
+          "W&auml;hlen Sie <strong>Abonnement k&uuml;ndigen</strong> und best&auml;tigen Sie",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "&Ouml;ffnen Sie <strong>Einstellungen &rarr; [Ihr Name] &rarr; Abonnements</strong>",
+          "Tippen Sie auf <strong>Deezer</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+        "note"  => "Falls Sie &uuml;ber den App Store abonniert haben, k&uuml;ndigen Sie dort.",
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "&Ouml;ffnen Sie <strong>Google Play &rarr; Abonnements</strong>",
+          "Tippen Sie auf <strong>Deezer</strong>",
+          "Tippen Sie auf <strong>Abonnement k&uuml;ndigen</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Premium-Zugang bis Ende der bezahlten Periode",
+      "Offline-Downloads werden nach Ablauf gel&ouml;scht",
+      "Ihre Playlists und Favoriten bleiben im kostenlosen Konto erhalten",
+      "Deezer kostenlos (mit Werbung) bleibt verf&uuml;gbar",
+    ],
+    "faq" => [
+      ["Bleibt meine Musik nach der K&uuml;ndigung von Deezer Premium erhalten?",
+       "Ihre Playlists und gespeicherten Alben bleiben in Ihrem kostenlosen Konto erhalten, aber Sie k&ouml;nnen sie nicht mehr offline h&ouml;ren. Offline-Downloads werden nach Ablauf des Abonnements entfernt."],
+      ["Was ist der Unterschied zwischen Deezer und Spotify?",
+       "Beide bieten &auml;hnliche Musikbibliotheken. Deezer bietet HiFi-Audio (FLAC) als Zusatzoption und ist in Deutschland etwas g&uuml;nstiger. Spotify hat bessere personalisierte Empfehlungen (Discover Weekly, Radar der Neuheiten)."],
+    ],
+    "related" => ["spotify", "amazon-music", "apple-music", "youtube-premium"],
+  ],
+
 ];
 
 // ── Routing ───────────────────────────────────────────────────────────────────
@@ -1905,6 +2007,7 @@ $all_apps = [
   ["Dropbox","dropbox"],["Tinder","tinder"],["EA Play","ea-play"],
   ["iCloud+","apple-icloud"],["Surfshark","surfshark"],["Bumble","bumble"],
   ["LinkedIn","linkedin"],["Zoom","zoom"],["ExpressVPN","expressvpn"],
+  ["MagentaTV","magenta-tv"],["Deezer","deezer"],
 ];
 
 if (!$app) { http_response_code(404); }

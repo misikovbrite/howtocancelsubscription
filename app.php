@@ -6636,6 +6636,714 @@ $apps_data = [
     "related" => ["lastpass", "keeper", "nordvpn", "proton-vpn"],
   ],
 
+  "blink" => [
+    "name"     => "Blink",
+    "emoji"    => "📷",
+    "color"    => "#1A1A2E",
+    "tagline"  => "Cancel Blink camera subscription",
+    "about"    => "Blink Subscription Plan (~$3/month per camera or $10/month for unlimited cameras) enables cloud storage and video history for Blink security cameras. Cancel to stop cloud storage billing — cameras still work locally.",
+    "refund"   => "Blink does not offer refunds for the current billing period. Cancel before your renewal date to avoid the next charge.",
+    "platforms" => [
+      "web" => [
+        "label" => "Blink App",
+        "icon"  => "💻",
+        "steps" => [
+          "Open the <strong>Blink Home Monitor app</strong>",
+          "Tap the <strong>Settings</strong> icon",
+          "Select <strong>Manage Account</strong>",
+          "Tap <strong>Subscription</strong>",
+          "Select <strong>Cancel Subscription</strong> and confirm",
+        ],
+        "note"  => "After canceling, cameras continue to work with local storage (Sync Module 2 with USB drive) or live view only.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Blink</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>Blink</strong>",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Cameras still work — live view available in the app",
+      "Cloud clip storage disabled after current period",
+      "Use Sync Module 2 + USB drive for local recording",
+      "Motion alerts and arm/disarm features still functional",
+    ],
+    "faq" => [
+      ["Do Blink cameras work without a subscription?",
+       "Yes — Blink cameras work without a subscription for live view and arm/disarm controls. You lose cloud clip storage, but can use a Sync Module 2 with a USB drive for free local storage."],
+      ["How does Blink compare to Ring without a subscription?",
+       "Both work for live view without a subscription. Blink's local storage option (Sync Module 2 + USB) is free, while Ring's local storage requires a Ring Alarm Pro. Blink is the more budget-friendly option."],
+    ],
+    "related" => ["ring", "simplisafe", "wyze", "bark"],
+  ],
+
+  "ring" => [
+    "name"     => "Ring",
+    "emoji"    => "🔔",
+    "color"    => "#1C7ED6",
+    "tagline"  => "Cancel Ring Protect subscription",
+    "about"    => "Ring Protect Basic (~$4.99/month per device) or Plus (~$10/month for all devices) saves video recordings and enables sharing. Without a plan, Ring doorbells and cameras still work for live view only.",
+    "refund"   => "Ring offers a 30-day free trial on new subscriptions. After the trial, no refunds are given for the current billing period. Cancel before your renewal date.",
+    "platforms" => [
+      "web" => [
+        "label" => "Ring Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>ring.com</strong> and sign in",
+          "Click the <strong>menu icon</strong> in the top left",
+          "Select <strong>Account → Protect Plans</strong>",
+          "Click <strong>Manage Plan</strong>",
+          "Select <strong>Cancel Plan</strong> and confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "Ring App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Ring app</strong>",
+          "Tap the <strong>menu icon</strong> (☰) at the top left",
+          "Go to <strong>Account → Protect Plans</strong>",
+          "Tap <strong>Cancel Plan</strong> and confirm",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Live view still works on all Ring devices",
+      "Video history and cloud recordings disabled",
+      "Motion alerts still trigger but clips not saved",
+      "Ring Alarm professional monitoring requires Protect Plus or higher",
+    ],
+    "faq" => [
+      ["Does Ring work without a subscription?",
+       "Yes — Ring doorbells and cameras work without a subscription for live view, motion alerts, and two-way talk. You lose the ability to review recorded clips; only the last 60 seconds of live view is available."],
+      ["Can I get a refund on Ring Protect?",
+       "Ring does not offer refunds after the 30-day trial period. If you cancel during the trial, you won't be charged. After that, you keep access until the end of the paid period."],
+    ],
+    "related" => ["blink", "simplisafe", "bark", "amazon-prime"],
+  ],
+
+  "simplisafe" => [
+    "name"     => "SimpliSafe",
+    "emoji"    => "🏠",
+    "color"    => "#0066CC",
+    "tagline"  => "Cancel SimpliSafe monitoring subscription",
+    "about"    => "SimpliSafe offers Standard (~$17.99/month) and Fast Protect (~$29.99/month) professional monitoring plans. The hardware works without a subscription for self-monitoring.",
+    "refund"   => "SimpliSafe offers a 60-day money-back guarantee on hardware. Monitoring subscriptions can be canceled anytime with no early termination fee.",
+    "platforms" => [
+      "web" => [
+        "label" => "SimpliSafe Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>simplisafe.com</strong> and sign in",
+          "Click your <strong>name → My Account</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Monitoring</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "You can also call SimpliSafe at 888-957-4675 to cancel. No contract — cancel anytime.",
+      ],
+      "iphone" => [
+        "label" => "SimpliSafe App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>SimpliSafe app</strong>",
+          "Tap <strong>My System → Subscription</strong>",
+          "Tap <strong>Cancel Plan</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Hardware continues to work as a self-monitored system",
+      "No more professional monitoring or police dispatch",
+      "App remote control and alerts still work",
+      "Reactivate professional monitoring anytime — no new contract needed",
+    ],
+    "faq" => [
+      ["Does SimpliSafe work without a subscription?",
+       "Yes — SimpliSafe hardware works without monitoring for local siren alerts and self-monitoring via the app (on Standard plan). The Fast Protect plan adds 24/7 professional monitoring with police dispatch."],
+      ["Is there an early termination fee for SimpliSafe?",
+       "No — SimpliSafe has no contracts and no early termination fees. Cancel your monitoring anytime with no penalty. This is one of SimpliSafe's main selling points."],
+    ],
+    "related" => ["ring", "blink", "bark", "aura"],
+  ],
+
+  "avast" => [
+    "name"     => "Avast",
+    "emoji"    => "🔰",
+    "color"    => "#FF6600",
+    "tagline"  => "Cancel Avast antivirus subscription",
+    "about"    => "Avast Premium Security (~$69.99/year) and Avast One (~$99.99/year) provide antivirus, VPN, and privacy features. Auto-renewal is on by default — cancel before the renewal date to avoid charges.",
+    "refund"   => "Avast offers a 30-day money-back guarantee on most subscriptions. Contact support at support.avast.com within 30 days of purchase.",
+    "platforms" => [
+      "web" => [
+        "label" => "my.avast.com",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>my.avast.com</strong> and sign in",
+          "Click <strong>Subscriptions</strong>",
+          "Find your subscription and click <strong>Cancel subscription</strong>",
+          "Follow the prompts to confirm",
+        ],
+        "note"  => "For a refund within 30 days, contact Avast support at support.avast.com/en-us/contact.",
+      ],
+      "iphone" => [
+        "label" => "Via Avast app",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Avast Security app</strong>",
+          "Tap <strong>Account → Manage Subscription</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Protection continues until end of billing period",
+      "30-day refund window for new subscriptions",
+      "Free Avast Antivirus remains available",
+      "Windows Defender activates automatically when Avast expires",
+    ],
+    "faq" => [
+      ["Is the free version of Avast good enough?",
+       "Avast Free Antivirus provides solid basic protection. For most users, Windows Defender (built into Windows 11) combined with safe browsing habits is sufficient. Avast Premium adds VPN, ransomware protection, and webcam shield."],
+      ["How do I stop Avast from auto-renewing?",
+       "Log in at my.avast.com, go to Subscriptions, and turn off auto-renewal. You can also disable it in the Avast app under Menu → My Subscriptions."],
+    ],
+    "related" => ["norton", "mcafee", "nordvpn", "keeper"],
+  ],
+
+  "hims" => [
+    "name"     => "Hims",
+    "emoji"    => "💊",
+    "color"    => "#2B8A3E",
+    "tagline"  => "Cancel Hims subscription",
+    "about"    => "Hims offers subscription-based telehealth for men covering hair loss, ED, skincare, and mental health. Prices vary by treatment (~$20–$100/month). Cancel at least 3 days before your next shipment.",
+    "refund"   => "Hims processes refunds on a case-by-case basis. Contact support at forhims.com/contact before your next billing date for the best chance of a refund.",
+    "platforms" => [
+      "web" => [
+        "label" => "Hims Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>forhims.com</strong> and sign in",
+          "Click your <strong>name → Account</strong>",
+          "Select <strong>Subscriptions</strong>",
+          "Click <strong>Cancel Subscription</strong> on the relevant product",
+          "Confirm the cancellation",
+        ],
+        "note"  => "Cancel at least 3 days before your next shipment date to avoid being charged for the next order.",
+      ],
+      "iphone" => [
+        "label" => "Hims App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Hims app</strong>",
+          "Tap <strong>Account → Subscriptions</strong>",
+          "Select the subscription you want to cancel",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "No further shipments or charges after cancellation",
+      "Any in-transit shipment will still arrive",
+      "You can pause instead of cancel (3-month pause available)",
+      "Resubscribe anytime to resume treatment",
+    ],
+    "faq" => [
+      ["Can I pause my Hims subscription instead of canceling?",
+       "Yes — Hims allows you to pause your subscription for up to 3 months. Go to Account → Subscriptions and select 'Pause' instead of Cancel."],
+      ["What happens to my prescription if I cancel Hims?",
+       "Your prescription is held on file. If you resubscribe, you can resume your treatment without going through the full consultation again, depending on how long you've been paused."],
+    ],
+    "related" => ["hers", "nurx", "keeps", "headspace"],
+  ],
+
+  "hers" => [
+    "name"     => "Hers",
+    "emoji"    => "🌸",
+    "color"    => "#C2185B",
+    "tagline"  => "Cancel Hers subscription",
+    "about"    => "Hers offers subscription-based telehealth for women covering hair loss, skincare, birth control, and mental health. Prices vary by treatment. Cancel before your next billing date to avoid charges.",
+    "refund"   => "Hers processes refunds on a case-by-case basis. Contact support at forhers.com/contact before your next billing date.",
+    "platforms" => [
+      "web" => [
+        "label" => "Hers Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>forhers.com</strong> and sign in",
+          "Click your <strong>name → Account</strong>",
+          "Select <strong>Subscriptions</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "Cancel at least 3 days before your next shipment date.",
+      ],
+      "iphone" => [
+        "label" => "Hers App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Hers app</strong>",
+          "Tap <strong>Account → Subscriptions</strong>",
+          "Select the relevant subscription",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "No further shipments or charges after cancellation",
+      "Any in-transit order will still arrive",
+      "Pause option available for up to 3 months",
+      "Resubscribe anytime to resume treatment",
+    ],
+    "faq" => [
+      ["Is Hers the same company as Hims?",
+       "Yes — Hims & Hers Health is the same company. Hims focuses on men's health; Hers focuses on women's health. They share the same platform, app, and support team."],
+      ["Can I get a refund from Hers?",
+       "Hers reviews refund requests case by case. Contact support before your next billing date at forhers.com/contact. Prescription medications are generally not refundable once dispensed."],
+    ],
+    "related" => ["hims", "nurx", "ritual", "calm"],
+  ],
+
+  "nurx" => [
+    "name"     => "Nurx",
+    "emoji"    => "🩺",
+    "color"    => "#6C3483",
+    "tagline"  => "Cancel Nurx subscription",
+    "about"    => "Nurx provides telehealth subscriptions for birth control, STI testing, PrEP, skincare, and mental health. A $25 consultation fee and prescription costs vary. Cancel through your Nurx account.",
+    "refund"   => "Nurx does not refund prescription medications once dispensed. Contact support at nurx.com/contact for billing issues.",
+    "platforms" => [
+      "web" => [
+        "label" => "Nurx Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>nurx.com</strong> and sign in",
+          "Click your <strong>profile → Settings</strong>",
+          "Select <strong>Subscriptions</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "Cancel before your next refill is processed to avoid being charged for the next shipment.",
+      ],
+      "iphone" => [
+        "label" => "Nurx App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Nurx app</strong>",
+          "Tap <strong>Account → Manage Subscription</strong>",
+          "Tap <strong>Cancel</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "No further refills shipped after cancellation",
+      "Consult your doctor for alternative prescriptions",
+      "Your medical history remains on file",
+      "Reactivate your Nurx subscription anytime",
+    ],
+    "faq" => [
+      ["Can I transfer my Nurx prescription to a local pharmacy?",
+       "Yes — contact Nurx support to request a prescription transfer to your local pharmacy. This is a good option if you want to continue your medication but stop using the Nurx service."],
+      ["Does Nurx accept insurance?",
+       "Nurx accepts most major insurance plans. With insurance, many medications are free or low-cost. The $25 consultation fee is typically not covered by insurance."],
+    ],
+    "related" => ["hims", "hers", "keeps", "headspace"],
+  ],
+
+  "transunion" => [
+    "name"     => "TransUnion",
+    "emoji"    => "📊",
+    "color"    => "#003087",
+    "tagline"  => "Cancel TransUnion credit monitoring subscription",
+    "about"    => "TransUnion offers credit monitoring subscriptions (~$24.95/month) that include credit score tracking, identity theft alerts, and dark web monitoring. Cancel to stop auto-renewal.",
+    "refund"   => "TransUnion offers refunds within 3 days of purchase for new subscriptions. Contact support at transunion.com/customer-support.",
+    "platforms" => [
+      "web" => [
+        "label" => "TransUnion Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>transunion.com</strong> and sign in",
+          "Click your <strong>name → Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "You can also call 1-833-395-6941 to cancel by phone.",
+      ],
+    ],
+    "after_cancel" => [
+      "Credit monitoring and alerts disabled",
+      "You can still access your free annual credit report at AnnualCreditReport.com",
+      "Dark web monitoring disabled after cancellation",
+      "Your credit score doesn't change when you cancel monitoring",
+    ],
+    "faq" => [
+      ["Does canceling TransUnion hurt my credit score?",
+       "No — canceling a credit monitoring subscription has no effect on your credit score. Your credit score is determined by your payment history, utilization, and credit mix — not by who's monitoring it."],
+      ["What's the difference between TransUnion, Equifax, and Experian?",
+       "All three are credit bureaus that collect and report credit data. Lenders may check one or all three. Each bureau may show slightly different scores based on which accounts they have on file."],
+    ],
+    "related" => ["experian", "equifax", "aura", "lifelock"],
+  ],
+
+  "equifax" => [
+    "name"     => "Equifax",
+    "emoji"    => "📈",
+    "color"    => "#C8102E",
+    "tagline"  => "Cancel Equifax credit monitoring subscription",
+    "about"    => "Equifax offers credit monitoring plans (~$19.95–$29.95/month) including credit score tracking, identity theft insurance, and fraud alerts. Cancel through your Equifax account.",
+    "refund"   => "Equifax offers refunds within 30 days of initial purchase. Contact support at equifax.com/personal/contact-us.",
+    "platforms" => [
+      "web" => [
+        "label" => "Equifax Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>equifax.com</strong> and sign in",
+          "Click your <strong>name → My Account</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "You can also cancel by calling 1-800-685-1111.",
+      ],
+    ],
+    "after_cancel" => [
+      "Credit monitoring alerts disabled after cancellation",
+      "Free credit report still available at AnnualCreditReport.com",
+      "Identity theft insurance coverage ends",
+      "Your credit score is not affected by canceling",
+    ],
+    "faq" => [
+      ["Can I freeze my Equifax credit for free instead of paying for monitoring?",
+       "Yes — placing a credit freeze at Equifax (and the other bureaus) is free and more effective at preventing fraud than paid monitoring. Go to equifax.com/personal/credit-report-services/free-credit-freeze."],
+      ["Is Equifax monitoring worth the price?",
+       "For most people, the free monitoring from your bank's credit card, combined with a free credit freeze, provides adequate protection. Paid services add convenience but aren't strictly necessary."],
+    ],
+    "related" => ["transunion", "experian", "aura", "lifelock"],
+  ],
+
+  "acorns" => [
+    "name"     => "Acorns",
+    "emoji"    => "🌰",
+    "color"    => "#228B22",
+    "tagline"  => "Cancel Acorns subscription",
+    "about"    => "Acorns is a micro-investing app with three plans: Personal ($3/month), Premium ($5/month), and a free option for college students. Cancel to stop the monthly fee — your investments remain.",
+    "refund"   => "Acorns does not refund monthly subscription fees. Cancel before your next billing date to stop future charges.",
+    "platforms" => [
+      "web" => [
+        "label" => "Acorns App",
+        "icon"  => "💻",
+        "steps" => [
+          "Open the <strong>Acorns app</strong>",
+          "Tap the <strong>profile icon</strong> in the top right",
+          "Select <strong>Settings → My Subscription</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "Canceling the subscription does not close your account or sell your investments. Your money stays invested.",
+      ],
+    ],
+    "after_cancel" => [
+      "Your investment portfolio remains untouched",
+      "No more monthly subscription fees",
+      "Round-ups stop automatically",
+      "Withdraw your funds or close the account separately if desired",
+    ],
+    "faq" => [
+      ["Do I lose my investments if I cancel Acorns?",
+       "No — canceling the Acorns subscription only stops the monthly fee and pauses new round-up investments. Your existing portfolio remains invested. You need to separately request a withdrawal if you want your money back."],
+      ["How do I close my Acorns account completely?",
+       "To close your account, go to Settings → Close Account in the app. You'll need to withdraw your funds first. Note that closing a retirement account (Acorns Later) may have tax implications."],
+    ],
+    "related" => ["rocket-money", "mint", "quickbooks", "amazon-prime"],
+  ],
+
+  "ritual" => [
+    "name"     => "Ritual",
+    "emoji"    => "💊",
+    "color"    => "#FFC107",
+    "tagline"  => "Cancel Ritual vitamins subscription",
+    "about"    => "Ritual offers subscription-based vitamins (~$30–$40/month) for women, men, and children. Subscriptions auto-renew monthly. Cancel before your next order is processed to stop charges.",
+    "refund"   => "Ritual offers a 30-day money-back guarantee on your first order. After that, contact support at support.ritual.com for assistance.",
+    "platforms" => [
+      "web" => [
+        "label" => "Ritual Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>ritual.com</strong> and sign in",
+          "Click your <strong>name → Account</strong>",
+          "Select <strong>Subscriptions</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "Cancel at least 2 days before your next order date to avoid being charged for the next shipment.",
+      ],
+    ],
+    "after_cancel" => [
+      "No further shipments or charges",
+      "30-day money-back on first order for new customers",
+      "Your account remains active — resubscribe anytime",
+      "Pause option available for 1–3 months",
+    ],
+    "faq" => [
+      ["Can I pause my Ritual subscription instead of canceling?",
+       "Yes — Ritual allows you to pause for 1–3 months. Go to Account → Subscriptions and choose 'Pause' to skip shipments temporarily without canceling."],
+      ["Is Ritual worth the price compared to drugstore vitamins?",
+       "Ritual uses traceable, third-party-tested ingredients and is NSF certified. It's more expensive than generic vitamins but transparent about sourcing. Whether it's worth it depends on your priorities."],
+    ],
+    "related" => ["hims", "hers", "calm", "headspace"],
+  ],
+
+  "the-athletic" => [
+    "name"     => "The Athletic",
+    "emoji"    => "⚽",
+    "color"    => "#000000",
+    "tagline"  => "Cancel The Athletic subscription",
+    "about"    => "The Athletic (~$7.99/month or $59.99/year) is an ad-free sports journalism platform covering in-depth reporting on major leagues. Owned by The New York Times since 2022.",
+    "refund"   => "The Athletic offers refunds for annual subscriptions canceled within 30 days of purchase. Monthly subscriptions are not refunded. Contact support at theathletic.com/contact.",
+    "platforms" => [
+      "web" => [
+        "label" => "The Athletic Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>theathletic.com</strong> and sign in",
+          "Click your <strong>profile icon → Account Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>The Athletic</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>The Athletic</strong>",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access continues until end of billing period",
+      "All articles and podcasts accessible until expiry",
+      "Saved articles and favorites preserved",
+      "Resubscribe anytime for full access",
+    ],
+    "faq" => [
+      ["Is The Athletic worth it for sports fans?",
+       "The Athletic excels at in-depth reporting, behind-the-scenes access, and long-form journalism. If you follow specific teams closely and want more than box scores, it's worth the price. It's especially strong for soccer, NFL, NBA, and MLB."],
+      ["Does The Athletic have a free tier?",
+       "The Athletic offers limited free articles per month. After reaching the limit, a subscription is required. Some articles are permanently free."],
+    ],
+    "related" => ["espn-plus", "nba-league-pass", "mlb-tv", "new-york-times"],
+  ],
+
+  "headspace" => [
+    "name"     => "Headspace",
+    "emoji"    => "🧘",
+    "color"    => "#FF6B35",
+    "tagline"  => "Cancel Headspace subscription",
+    "about"    => "Headspace (~$12.99/month or $69.99/year) is a guided meditation and mindfulness app offering sleep sounds, focus music, and stress-relief exercises. Cancel before your renewal to avoid charges.",
+    "refund"   => "Headspace offers refunds for annual subscriptions canceled within 30 days. Monthly subscriptions are not refunded. Contact support at help.headspace.com.",
+    "platforms" => [
+      "web" => [
+        "label" => "Headspace Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>headspace.com</strong> and sign in",
+          "Click your <strong>name → Account Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Headspace</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>Headspace</strong>",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access continues until end of billing period",
+      "Free Headspace content still available after expiry",
+      "Your meditation history and streaks are preserved",
+      "Resubscribe anytime to regain full access",
+    ],
+    "faq" => [
+      ["Is there a free version of Headspace?",
+       "Yes — Headspace has a free tier with a limited selection of meditations, sleep sounds, and exercises. The paid subscription unlocks the full library of 500+ guided meditations."],
+      ["Headspace vs Calm — which is better?",
+       "Headspace has a more structured, course-based approach ideal for beginners. Calm has a larger sleep stories library and celebrity narrators. Both offer 7-day free trials — try both to see which resonates."],
+    ],
+    "related" => ["calm", "hims", "hers", "ritual"],
+  ],
+
+  "oura-ring" => [
+    "name"     => "Oura Ring",
+    "emoji"    => "💍",
+    "color"    => "#1A1A1A",
+    "tagline"  => "Cancel Oura Ring membership",
+    "about"    => "Oura Ring membership (~$5.99/month) is required to access detailed health insights, trends, and AI features in the Oura app. Basic data is viewable without a membership.",
+    "refund"   => "Oura offers a 30-day return on the ring hardware. Membership subscriptions are not refunded. Cancel before your renewal date through the app.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "Oura App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Oura app</strong>",
+          "Tap your <strong>profile icon</strong>",
+          "Select <strong>Membership</strong>",
+          "Tap <strong>Cancel Membership</strong>",
+          "Confirm",
+        ],
+        "note"  => "If subscribed through App Store, cancel via Settings → [your name] → Subscriptions instead.",
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>Oura</strong>",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Basic ring data (steps, heart rate) still viewable",
+      "Advanced insights, trends, and Readiness scores disabled",
+      "Ring hardware continues to track and store data",
+      "Resubscribe anytime to restore full insights",
+    ],
+    "faq" => [
+      ["Does the Oura Ring work without a subscription?",
+       "Yes — basic data like steps, heart rate, and temperature is viewable without a membership. However, the detailed Sleep Score, Readiness Score, Activity Score, and AI Advisor require an active membership ($5.99/mo)."],
+      ["Is the Oura Ring membership worth it?",
+       "If you actively use the detailed health insights and trends, the $5.99/month is reasonable for the data a $299+ ring generates. If you only check basic metrics, the free tier may be sufficient."],
+    ],
+    "related" => ["whoop", "fitbit", "strava", "headspace"],
+  ],
+
+  "lose-it" => [
+    "name"     => "Lose It!",
+    "emoji"    => "⚖️",
+    "color"    => "#4CAF50",
+    "tagline"  => "Cancel Lose It! Premium subscription",
+    "about"    => "Lose It! Premium (~$39.99/year or $4.99/month) is a calorie-tracking and weight-loss app with meal planning, macro tracking, and progress analysis. The free version includes basic calorie tracking.",
+    "refund"   => "Lose It! offers refunds within 30 days of purchase for annual subscriptions. Contact support at loseit.com/contact.",
+    "platforms" => [
+      "web" => [
+        "label" => "Lose It! Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>loseit.com</strong> and sign in",
+          "Click your <strong>name → Account Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Lose It!</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>Lose It!</strong>",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Free tier remains with basic calorie tracking",
+      "Your food log history is preserved",
+      "Macro targets and meal planning require Premium",
+      "Resubscribe anytime to restore Premium features",
+    ],
+    "faq" => [
+      ["Is Lose It! free without Premium?",
+       "Yes — Lose It! has a solid free tier with calorie counting, a food database, and basic weight tracking. Premium adds macro tracking, meal planning, sleep/water logging, and detailed reports."],
+      ["Lose It! vs MyFitnessPal — which is better?",
+       "Both are strong calorie trackers. Lose It! has a cleaner interface and is slightly cheaper. MyFitnessPal has a larger food database and better third-party integrations (Fitbit, Garmin, Apple Health)."],
+    ],
+    "related" => ["myfitnesspal", "noom", "headspace", "strava"],
+  ],
+
+  "lifelock" => [
+    "name"     => "LifeLock",
+    "emoji"    => "🔒",
+    "color"    => "#FFD700",
+    "tagline"  => "Cancel LifeLock identity theft protection",
+    "about"    => "LifeLock (by Norton) offers identity theft protection plans from ~$8.99/month (Standard) to ~$29.99/month (Ultimate Plus). Cancel before renewal to stop auto-charges.",
+    "refund"   => "LifeLock offers refunds within 60 days of purchase for annual plans. Contact support at lifelock.com/support or call 1-800-543-3562.",
+    "platforms" => [
+      "web" => [
+        "label" => "LifeLock Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>lifelock.com</strong> and sign in",
+          "Click your <strong>name → Account Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "You can also cancel by calling 1-800-543-3562. 60-day refund window on annual plans.",
+      ],
+    ],
+    "after_cancel" => [
+      "Identity monitoring alerts disabled after cancellation",
+      "Identity theft insurance coverage ends",
+      "60-day refund available on annual plans",
+      "Consider placing a free credit freeze as an alternative",
+    ],
+    "faq" => [
+      ["Is LifeLock worth the monthly fee?",
+       "LifeLock provides real-time alerts and up to $1M in identity theft insurance. For many users, a free credit freeze at all three bureaus + free monitoring through your bank provides comparable protection at no cost."],
+      ["What's the difference between LifeLock and Norton 360 with LifeLock?",
+       "Norton 360 with LifeLock bundles antivirus software + VPN + LifeLock identity protection in one plan. If you only need identity protection (not antivirus), standalone LifeLock is cheaper."],
+    ],
+    "related" => ["aura", "experian", "transunion", "equifax"],
+  ],
+
 ];
 
 // ── Routing ──────────────────────────────────────────────────────────────────
@@ -6692,6 +7400,12 @@ $all_apps = [
   ["AllTrails+","alltrails"],["IPVanish","ipvanish"],["Preply","preply"],
   ["Rosetta Stone","rosetta-stone"],["Keeper","keeper"],
   ["LastPass","lastpass"],["1Password","1password"],
+  ["Blink","blink"],["Ring","ring"],["SimpliSafe","simplisafe"],
+  ["Avast","avast"],["Hims","hims"],["Hers","hers"],["Nurx","nurx"],
+  ["TransUnion","transunion"],["Equifax","equifax"],["Acorns","acorns"],
+  ["Ritual","ritual"],["The Athletic","the-athletic"],
+  ["Headspace","headspace"],["Oura Ring","oura-ring"],
+  ["Lose It!","lose-it"],["LifeLock","lifelock"],
 ];
 
 // ── Audit form handler ────────────────────────────────────────────────────────

@@ -28,7 +28,10 @@ $en_apps = [
   "monday-com","apple-fitness-plus",
   "max","vix","showtime","apple-one","plex",
   "dazn","fabletics","stitch-fix","alltrails","ipvanish",
-  "preply","rosetta-stone","keeper","lastpass","1password"
+  "preply","rosetta-stone","keeper","lastpass","1password",
+  "blink","ring","simplisafe","avast","hims","hers","nurx",
+  "transunion","equifax","acorns","ritual","the-athletic",
+  "headspace","oura-ring","lose-it","lifelock"
 ];
 
 $de_apps = [
@@ -39,7 +42,8 @@ $de_apps = [
   "kindle-unlimited","nordvpn","parship","elitepartner","playstation-plus",
   "xbox-game-pass","babbel","apple-music","discord-nitro","google-one",
   "dropbox","tinder","ea-play","apple-icloud","surfshark","bumble",
-  "linkedin","zoom","expressvpn"
+  "linkedin","zoom","expressvpn",
+  "magenta-tv","deezer"
 ];
 
 $fr_apps = [

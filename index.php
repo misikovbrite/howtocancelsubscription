@@ -382,6 +382,22 @@ $apps = [
   ["Stitch Fix",     "stitch-fix",     "👗", "Other",              50, "Cancel Stitch Fix subscription"],
   ["LastPass",       "lastpass",       "🔐", "Security",           50, "Cancel LastPass subscription"],
   ["1Password",      "1password",      "🗝️", "Security",           50, "Cancel 1Password subscription"],
+  ["Blink",          "blink",          "📷", "Other",            2400, "Cancel Blink camera subscription"],
+  ["Ring",           "ring",           "🔔", "Other",            1300, "Cancel Ring Protect plan"],
+  ["Hims",           "hims",           "💊", "Health & Fitness",  880, "Cancel Hims subscription"],
+  ["Avast",          "avast",          "🔰", "Security",          480, "Cancel Avast subscription"],
+  ["Hers",           "hers",           "🌸", "Health & Fitness",  480, "Cancel Hers subscription"],
+  ["SimpliSafe",     "simplisafe",     "🏠", "Other",             390, "Cancel SimpliSafe monitoring"],
+  ["TransUnion",     "transunion",     "📊", "Finance",           390, "Cancel TransUnion subscription"],
+  ["Acorns",         "acorns",         "🌰", "Finance",           320, "Cancel Acorns subscription"],
+  ["Ritual",         "ritual",         "💊", "Health & Fitness",  320, "Cancel Ritual vitamins"],
+  ["The Athletic",   "the-athletic",   "⚽", "Sports",            320, "Cancel The Athletic subscription"],
+  ["Nurx",           "nurx",           "🩺", "Health & Fitness",  170, "Cancel Nurx subscription"],
+  ["Oura Ring",      "oura-ring",      "💍", "Health & Fitness",  110, "Cancel Oura Ring membership"],
+  ["Lose It!",       "lose-it",        "⚖️", "Health & Fitness",  110, "Cancel Lose It! Premium"],
+  ["Headspace",      "headspace",      "🧘", "Health & Fitness",   90, "Cancel Headspace subscription"],
+  ["LifeLock",       "lifelock",       "🔒", "Security",           70, "Cancel LifeLock subscription"],
+  ["Equifax",        "equifax",        "📈", "Finance",            260, "Cancel Equifax subscription"],
 ];
 
 // Sort by monthly searches

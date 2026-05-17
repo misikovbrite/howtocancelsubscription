@@ -205,6 +205,8 @@ $apps = [
   ["LinkedIn",         "linkedin",         "💼", "Produktivität",   480, "Profildaten bleiben erhalten"],
   ["Zoom",             "zoom",             "📹", "Produktivität",   390, "40-Min-Limit kehrt zurück"],
   ["ExpressVPN",       "expressvpn",       "🔐", "Sicherheit",      390, "30-Tage-Garantie"],
+  ["MagentaTV",        "magenta-tv",       "📺", "Streaming",      5400, "Kündigung & Fristen"],
+  ["Deezer",           "deezer",           "🎵", "Streaming",       590, "Playlists bleiben erhalten"],
 ];
 usort($apps, fn($a,$b) => $b[4]-$a[4]);
 ?>
