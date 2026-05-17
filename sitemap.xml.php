@@ -26,7 +26,9 @@ $en_apps = [
   "onlyfans","substack","patreon","wall-street-journal","washington-post",
   "aarp","bet-plus","pureflix","midjourney","quickbooks","medium",
   "monday-com","apple-fitness-plus",
-  "max","vix","showtime","apple-one","plex"
+  "max","vix","showtime","apple-one","plex",
+  "dazn","fabletics","stitch-fix","alltrails","ipvanish",
+  "preply","rosetta-stone","keeper","lastpass","1password"
 ];
 
 $de_apps = [
@@ -46,7 +48,8 @@ $fr_apps = [
   "hellofresh","apple-tv","chatgpt","paramount-plus","youtube-premium",
   "meetic","playstation-plus","nordvpn","tinder","linkedin","microsoft-365",
   "xbox-game-pass","google-one","duolingo","apple-music","apple-icloud",
-  "bumble","zoom","dropbox","babbel"
+  "bumble","zoom","dropbox","babbel",
+  "twitch","norton","badoo","mcafee","ea-play","google-workspace","happn","surfshark"
 ];
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

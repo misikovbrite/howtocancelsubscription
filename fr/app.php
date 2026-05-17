@@ -1759,6 +1759,348 @@ $apps_data = [
     "related" => ["duolingo", "spotify", "netflix", "amazon-prime"],
   ],
 
+  "twitch" => [
+    "name"     => "Twitch",
+    "emoji"    => "🟣",
+    "color"    => "#9146FF",
+    "tagline"  => "Annuler abonnement Twitch",
+    "about"    => "Twitch propose des abonnements à des chaînes (4,99 € à 24,99 €/mois) et Twitch Turbo (~8,99 €/mois) qui supprime les publicités sur toutes les chaînes. Les abonnements se renouvellent automatiquement.",
+    "refund"   => "Twitch ne rembourse généralement pas les abonnements en cours. Annulez avant la date de renouvellement pour éviter le prochain prélèvement.",
+    "platforms" => [
+      "web" => [
+        "label" => "Site Twitch",
+        "icon"  => "💻",
+        "steps" => [
+          "Rendez-vous sur <strong>twitch.tv</strong> et connectez-vous",
+          "Cliquez sur votre <strong>avatar</strong> en haut à droite",
+          "Sélectionnez <strong>Abonnements</strong>",
+          "Trouvez la chaîne ou Twitch Turbo et cliquez <strong>Gérer</strong>",
+          "Cliquez sur <strong>Annuler l'abonnement</strong>",
+        ],
+        "note"  => "Chaque abonnement à une chaîne est indépendant — annulez-les séparément.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>Twitch</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Accès aux avantages abonné jusqu'à la fin de la période",
+      "Badge et emotes abonné supprimés à l'expiration",
+      "L'historique de chat reste accessible",
+      "Vous pouvez vous réabonner à tout moment",
+    ],
+    "faq" => [
+      ["Comment annuler tous mes abonnements Twitch en même temps ?",
+       "Malheureusement, Twitch ne permet pas d'annuler tous les abonnements en un clic. Allez dans votre profil → Abonnements et annulez chaque chaîne individuellement."],
+      ["Qu'est-ce que Twitch Turbo et comment l'annuler ?",
+       "Twitch Turbo (8,99 €/mois) supprime les publicités sur toutes les chaînes et donne accès à des emotes exclusives. Annulez via twitch.tv → Paramètres → Abonnements → Twitch Turbo."],
+    ],
+    "related" => ["youtube-premium", "discord-nitro", "spotify", "netflix"],
+  ],
+
+  "norton" => [
+    "name"     => "Norton",
+    "emoji"    => "🛡️",
+    "color"    => "#FFD700",
+    "tagline"  => "Annuler abonnement Norton",
+    "about"    => "Norton 360 (environ 34,99 €/an en renouvellement) propose un antivirus, un VPN, un gestionnaire de mots de passe et une surveillance du dark web. Le renouvellement automatique est activé par défaut.",
+    "refund"   => "Norton offre une garantie satisfait ou remboursé de 60 jours pour les nouveaux abonnements. Contactez le support Norton pour obtenir un remboursement.",
+    "platforms" => [
+      "web" => [
+        "label" => "my.norton.com",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>my.norton.com</strong>",
+          "Cliquez sur <strong>Mon abonnement</strong>",
+          "Sélectionnez <strong>Désactiver le renouvellement automatique</strong>",
+          "Confirmez",
+        ],
+        "note"  => "Pour un remboursement dans les 60 jours, contactez le support Norton via le chat en direct.",
+      ],
+    ],
+    "after_cancel" => [
+      "Protection antivirus active jusqu'à la fin de la période",
+      "Garantie remboursement 60 jours pour les nouveaux abonnés",
+      "Le VPN Norton et le gestionnaire de mots de passe désactivés à l'expiration",
+      "Réabonnement possible à tout moment",
+    ],
+    "faq" => [
+      ["Comment désactiver le renouvellement automatique Norton ?",
+       "Connectez-vous sur my.norton.com, allez dans Mon abonnement et désactivez le renouvellement automatique. Vous pouvez aussi appeler le 0800 026 1525 (France)."],
+      ["Norton est-il encore pertinent face aux antivirus gratuits ?",
+       "Windows Defender (gratuit, intégré à Windows 11) offre une protection de base solide. Norton ajoute un VPN, une surveillance du dark web et une protection multi-appareils. Pour un usage basique, Defender suffit."],
+    ],
+    "related" => ["mcafee", "nordvpn", "surfshark", "microsoft-365"],
+  ],
+
+  "badoo" => [
+    "name"     => "Badoo Premium",
+    "emoji"    => "💜",
+    "color"    => "#6B2D8F",
+    "tagline"  => "Annuler abonnement Badoo Premium",
+    "about"    => "Badoo Premium (environ 34,99 €/mois) ajoute la possibilité de voir qui vous a liké, le mode Incognito et des filtres avancés. L'abonnement se renouvelle automatiquement.",
+    "refund"   => "Badoo ne rembourse généralement pas les abonnements en cours. Annulez avant la date de renouvellement.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>Badoo</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Ouvrez <strong>Google Play → Abonnements</strong>",
+          "Sélectionnez <strong>Badoo</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+      "web" => [
+        "label" => "badoo.com",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>badoo.com</strong>",
+          "Allez dans <strong>Paramètres → Confidentialité</strong>",
+          "Cliquez sur <strong>Gérer mon abonnement</strong>",
+          "Annulez le renouvellement automatique",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Accès Premium jusqu'à la fin de la période payée",
+      "Votre profil et vos contacts restent accessibles",
+      "Retour aux fonctionnalités gratuites à l'expiration",
+      "Badoo reste disponible gratuitement avec publicités",
+    ],
+    "faq" => [
+      ["Badoo est-il gratuit après l'annulation du Premium ?",
+       "Oui — Badoo propose une version gratuite avec publicités. Le Premium ajoute uniquement des fonctionnalités bonus (voir qui vous a liké, Incognito, Super Pouvoirs)."],
+      ["Quelle différence entre Badoo et Tinder ?",
+       "Badoo est plus populaire en Europe et en Amérique latine, avec un système de jeu basé sur les rencontres locales. Tinder est plus orienté swipe et plus populaire en France chez les 18-25 ans."],
+    ],
+    "related" => ["tinder", "bumble", "meetic", "happn"],
+  ],
+
+  "mcafee" => [
+    "name"     => "McAfee",
+    "emoji"    => "🔒",
+    "color"    => "#C8102E",
+    "tagline"  => "Annuler abonnement McAfee",
+    "about"    => "McAfee Total Protection (environ 39,99 €/an en renouvellement) inclut un antivirus, un VPN et une surveillance d'identité. Désactivez le renouvellement automatique en ligne.",
+    "refund"   => "McAfee offre une garantie satisfait ou remboursé de 30 jours. Contactez le support via mcafee.com/fr ou par téléphone.",
+    "platforms" => [
+      "web" => [
+        "label" => "account.mcafee.com",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>account.mcafee.com</strong>",
+          "Cliquez sur <strong>Mon compte → Abonnements</strong>",
+          "Sélectionnez votre abonnement",
+          "Cliquez sur <strong>Désactiver le renouvellement automatique</strong>",
+          "Confirmez",
+        ],
+        "note"  => "McAfee propose souvent une réduction avant l'annulation — refusez si vous voulez annuler.",
+      ],
+    ],
+    "after_cancel" => [
+      "Protection active jusqu'à la fin de la période",
+      "Garantie remboursement 30 jours pour les nouveaux abonnés",
+      "Le VPN et la surveillance d'identité désactivés à l'expiration",
+      "Windows Defender prend automatiquement le relais",
+    ],
+    "faq" => [
+      ["Comment désactiver le renouvellement automatique McAfee ?",
+       "Connectez-vous sur account.mcafee.com, allez dans Abonnements et désactivez le renouvellement. Vous pouvez aussi appeler le 0 800 944 495 (France, gratuit)."],
+      ["McAfee vaut-il mieux que Windows Defender ?",
+       "Windows Defender offre une protection de base solide et gratuite. McAfee ajoute un VPN, une protection multi-appareils et une surveillance du dark web. Pour un PC Windows, Defender suffit souvent."],
+    ],
+    "related" => ["norton", "nordvpn", "surfshark", "microsoft-365"],
+  ],
+
+  "ea-play" => [
+    "name"     => "EA Play",
+    "emoji"    => "🎮",
+    "color"    => "#FF6600",
+    "tagline"  => "Annuler abonnement EA Play",
+    "about"    => "EA Play (4,99 €/mois ou 29,99 €/an) donne accès à une bibliothèque de jeux EA, des essais anticipés et des réductions. EA Play Pro (~14,99 €/mois) ajoute les nouveaux jeux EA en accès complet dès le lancement.",
+    "refund"   => "EA ne rembourse généralement pas les abonnements en cours. Annulez avant la date de renouvellement pour éviter le prochain prélèvement.",
+    "platforms" => [
+      "web" => [
+        "label" => "EA Account (web)",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>account.ea.com</strong>",
+          "Allez dans <strong>Abonnements EA Play</strong>",
+          "Cliquez sur <strong>Annuler l'abonnement</strong>",
+          "Confirmez",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>EA Play</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Via PlayStation/Xbox",
+        "icon"  => "🕹️",
+        "steps" => [
+          "Sur <strong>PS5/PS4</strong> : Paramètres → Utilisateurs → Paiements → Abonnements → EA Play",
+          "Sur <strong>Xbox</strong> : Profil → Paramètres → Compte → Abonnements → EA Play",
+          "Désactivez le renouvellement automatique",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Accès EA Play jusqu'à la fin de la période payée",
+      "Les jeux EA Play deviennent inaccessibles à l'expiration",
+      "Les jeux achetés séparément restent dans votre bibliothèque",
+      "Les sauvegardes cloud EA sont conservées",
+    ],
+    "faq" => [
+      ["EA Play est-il inclus dans Xbox Game Pass Ultimate ?",
+       "Oui — EA Play est inclus dans Xbox Game Pass Ultimate sans frais supplémentaires. Si vous avez Game Pass Ultimate, vous n'avez pas besoin de souscrire EA Play séparément."],
+      ["Que se passe-t-il avec mes jeux EA si j'annule EA Play ?",
+       "Les jeux accessibles via EA Play (bibliothèque incluse) deviennent inaccessibles. Seuls les jeux que vous avez achetés séparément restent dans votre bibliothèque."],
+    ],
+    "related" => ["playstation-plus", "xbox-game-pass", "discord-nitro", "apple-arcade"],
+  ],
+
+  "google-workspace" => [
+    "name"     => "Google Workspace",
+    "emoji"    => "🏢",
+    "color"    => "#4285F4",
+    "tagline"  => "Annuler abonnement Google Workspace",
+    "about"    => "Google Workspace (à partir de 6,90 €/utilisateur/mois) inclut Gmail professionnel, Drive, Meet, Docs et plus encore. Géré via Google Admin Console.",
+    "refund"   => "Google rembourse au prorata les jours non utilisés pour les abonnements mensuels annulés en cours de mois. Contactez le support Google Workspace.",
+    "platforms" => [
+      "web" => [
+        "label" => "Google Admin Console",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>admin.google.com</strong> avec votre compte administrateur",
+          "Allez dans <strong>Facturation → Abonnements</strong>",
+          "Sélectionnez <strong>Google Workspace</strong>",
+          "Cliquez sur <strong>Annuler l'abonnement</strong>",
+          "Confirmez et téléchargez vos données avant",
+        ],
+        "note"  => "Seul l'administrateur du domaine peut annuler Google Workspace. Exportez vos données via Google Takeout avant l'annulation.",
+      ],
+    ],
+    "after_cancel" => [
+      "Accès aux données pendant 60 jours après l'annulation",
+      "Exportez tous vos emails, Drive et données avant l'expiration",
+      "Le domaine email @votredomaine.com cesse de fonctionner",
+      "Les comptes utilisateurs sont désactivés",
+    ],
+    "faq" => [
+      ["Comment récupérer mes données avant d'annuler Google Workspace ?",
+       "Utilisez Google Takeout (takeout.google.com) pour exporter Gmail, Drive, Contacts et Calendar. Faites-le avant d'annuler — vous avez 60 jours après l'annulation pour accéder aux données."],
+      ["Quelle différence entre Google Workspace et Google One ?",
+       "Google Workspace est pour les entreprises (email @votredomaine, outils collaboratifs). Google One est pour les particuliers (stockage Cloud personnel). Ce sont deux produits distincts."],
+    ],
+    "related" => ["microsoft-365", "dropbox", "zoom", "notion"],
+  ],
+
+  "happn" => [
+    "name"     => "Happn Premium",
+    "emoji"    => "💙",
+    "color"    => "#1F2D3D",
+    "tagline"  => "Annuler abonnement Happn Premium",
+    "about"    => "Happn est une application de rencontres basée sur la géolocalisation, populaire en France. Le Premium (~24,99 €/mois) ajoute les Super Likes illimités, la visibilité prioritaire et les filtres avancés.",
+    "refund"   => "Happn ne rembourse généralement pas les abonnements en cours. Annulez via l'App Store ou Google Play avant la date de renouvellement.",
+    "platforms" => [
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>Happn</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Ouvrez <strong>Google Play → Abonnements</strong>",
+          "Sélectionnez <strong>Happn</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Accès Premium jusqu'à la fin de la période payée",
+      "Votre profil et vos croisements sont conservés",
+      "Retour à la version gratuite avec fonctionnalités limitées",
+      "Happn reste utilisable gratuitement après l'annulation",
+    ],
+    "faq" => [
+      ["Happn est-il gratuit ?",
+       "Oui — Happn propose une version gratuite qui permet de voir les profils des personnes croisées et d'envoyer des likes. Le Premium ajoute les Super Likes illimités et des filtres avancés."],
+      ["Quelle est la particularité de Happn par rapport à Tinder ?",
+       "Happn montre uniquement les personnes que vous avez physiquement croisées dans la vie réelle. C'est une app très populaire à Paris et dans les grandes villes françaises."],
+    ],
+    "related" => ["tinder", "bumble", "badoo", "meetic"],
+  ],
+
+  "surfshark" => [
+    "name"     => "Surfshark",
+    "emoji"    => "🦈",
+    "color"    => "#1E3A5F",
+    "tagline"  => "Annuler abonnement Surfshark VPN",
+    "about"    => "Surfshark (~2,30 €/mois sur l'offre 2 ans) est un VPN avec connexions appareils illimitées. Les abonnements se renouvellent automatiquement au tarif plein après la période promotionnelle.",
+    "refund"   => "Surfshark offre une garantie satisfait ou remboursé de 30 jours. Contactez le support via le chat en direct sur surfshark.com.",
+    "platforms" => [
+      "web" => [
+        "label" => "surfshark.com",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>surfshark.com</strong>",
+          "Allez dans <strong>Mon compte → Facturation</strong>",
+          "Cliquez sur <strong>Annuler l'abonnement</strong>",
+          "Confirmez",
+        ],
+        "note"  => "Pour le remboursement 30j, utilisez le chat en direct sur surfshark.com/contact.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>Surfshark</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Accès VPN jusqu'à la fin de la période payée",
+      "Remboursement possible dans les 30 jours",
+      "Connexions illimitées jusqu'à l'expiration",
+      "Réabonnement possible à tout moment",
+    ],
+    "faq" => [
+      ["Comment obtenir un remboursement Surfshark ?",
+       "Contactez le support Surfshark via le chat en direct sur surfshark.com/contact dans les 30 jours suivant votre achat. Le remboursement est traité sous 3 à 5 jours ouvrables."],
+      ["Surfshark permet-il vraiment des connexions illimitées ?",
+       "Oui — Surfshark est l'un des rares VPN sans limite de connexions simultanées. Vous pouvez protéger tous vos appareils (PC, mobile, TV, tablette) avec un seul abonnement."],
+    ],
+    "related" => ["nordvpn", "expressvpn", "proton-vpn", "norton"],
+  ],
+
 ];
 
 // ── Routage ──────────────────────────────────────────────────────────────────

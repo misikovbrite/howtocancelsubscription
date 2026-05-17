@@ -372,6 +372,16 @@ $apps = [
   ["Showtime",       "showtime",       "🎬", "Streaming",        140, "Cancel Showtime subscription"],
   ["Apple One",      "apple-one",      "🍎", "Other",             90, "Cancel Apple One bundle"],
   ["Plex Pass",      "plex",           "🎞️", "Streaming",         70, "Cancel Plex Pass subscription"],
+  ["DAZN",           "dazn",           "🥊", "Sports",           1300, "Cancel DAZN subscription"],
+  ["Fabletics",      "fabletics",      "👟", "Other",             720, "Cancel Fabletics VIP membership"],
+  ["AllTrails+",     "alltrails",      "🥾", "Health & Fitness",  140, "Cancel AllTrails+ subscription"],
+  ["IPVanish",       "ipvanish",       "🛡️", "Security",          110, "Cancel IPVanish VPN"],
+  ["Preply",         "preply",         "🎓", "Other",              90, "Cancel Preply subscription"],
+  ["Rosetta Stone",  "rosetta-stone",  "🗿", "Other",              70, "Cancel Rosetta Stone"],
+  ["Keeper",         "keeper",         "🔑", "Security",           70, "Cancel Keeper password manager"],
+  ["Stitch Fix",     "stitch-fix",     "👗", "Other",              50, "Cancel Stitch Fix subscription"],
+  ["LastPass",       "lastpass",       "🔐", "Security",           50, "Cancel LastPass subscription"],
+  ["1Password",      "1password",      "🗝️", "Security",           50, "Cancel 1Password subscription"],
 ];
 
 // Sort by monthly searches

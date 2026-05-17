@@ -6202,6 +6202,440 @@ $apps_data = [
     "related" => ["netflix", "hulu", "emby", "jellyfin"],
   ],
 
+  "dazn" => [
+    "name"     => "DAZN",
+    "emoji"    => "🥊",
+    "color"    => "#F5FF00",
+    "tagline"  => "Cancel DAZN subscription",
+    "about"    => "DAZN (~$24.99/month or $224.99/year) is a sports streaming service offering boxing, MMA, NFL, soccer, and more. Cancel online before your renewal date to stop future charges.",
+    "refund"   => "DAZN does not offer refunds for the current billing period. Cancel before your renewal date to avoid the next charge. Some markets offer a 7-day free trial.",
+    "platforms" => [
+      "web" => [
+        "label" => "DAZN Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>dazn.com</strong> and sign in",
+          "Click your <strong>profile icon</strong> in the top right",
+          "Select <strong>Account</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Follow the prompts to confirm",
+        ],
+        "note"  => "DAZN will offer a pause option — choose Cancel if you want to stop billing entirely.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>DAZN</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>DAZN</strong>",
+          "Tap <strong>Cancel subscription</strong> and confirm",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access continues until the end of your billing period",
+      "All live and on-demand sports content accessible until expiry",
+      "No downloads or offline content after cancellation",
+      "Resubscribe anytime — no reactivation fee",
+    ],
+    "faq" => [
+      ["Can I pause my DAZN subscription instead of canceling?",
+       "Yes — DAZN offers a pause feature in some markets. Go to Account → Cancel Subscription and look for the 'Pause' option. This stops billing for up to 3 months."],
+      ["What sports does DAZN cover?",
+       "DAZN carries boxing (major fights), MMA/Bellator, NFL, Champions League (select markets), Serie A, and more. Coverage varies by country."],
+      ["Does DAZN offer a refund if I forgot to cancel?",
+       "DAZN generally does not offer refunds. If you were charged by mistake, contact DAZN support within 48 hours of the charge for the best chance of a refund."],
+    ],
+    "related" => ["espn-plus", "nba-league-pass", "mlb-tv", "peacock"],
+  ],
+
+  "fabletics" => [
+    "name"     => "Fabletics",
+    "emoji"    => "👟",
+    "color"    => "#FF4444",
+    "tagline"  => "Cancel Fabletics VIP membership",
+    "about"    => "Fabletics VIP membership (~$59.95/month credit) charges you monthly unless you skip by the 5th of each month. Cancel to stop the automatic monthly charges.",
+    "refund"   => "Unused member credits can be applied to purchases. Fabletics does not refund credits once charged. Cancel before the 6th of the month to skip that month's charge.",
+    "platforms" => [
+      "web" => [
+        "label" => "Fabletics Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>fabletics.com</strong> and sign in",
+          "Click your <strong>name</strong> in the top right",
+          "Select <strong>My Account</strong>",
+          "Click <strong>Membership</strong>",
+          "Select <strong>Cancel Membership</strong> and confirm",
+        ],
+        "note"  => "Canceling by phone is also an option: call 1-844-322-5384. Expect retention offers.",
+      ],
+      "iphone" => [
+        "label" => "Fabletics App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Fabletics app</strong>",
+          "Tap <strong>Account → My Membership</strong>",
+          "Tap <strong>Cancel Membership</strong>",
+          "Confirm the cancellation",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Unused member credits remain on your account",
+      "Use credits to shop at regular (non-member) prices",
+      "No further monthly charges after cancellation",
+      "You can rejoin as a VIP member at any time",
+    ],
+    "faq" => [
+      ["What happens to my Fabletics credits if I cancel?",
+       "Your credits stay in your account and can be used for purchases even after canceling VIP membership. Credits do not expire."],
+      ["How do I skip a month on Fabletics to avoid being charged?",
+       "Log in between the 1st and 5th of each month and click 'Skip This Month' in your account. If you miss the window, you'll be charged the $59.95 credit."],
+      ["Can I cancel Fabletics without calling?",
+       "Yes — you can cancel online through your account settings or via the app. Phone cancellation is also available but not required."],
+    ],
+    "related" => ["stitch-fix", "amazon-prime", "walmart-plus", "instacart"],
+  ],
+
+  "stitch-fix" => [
+    "name"     => "Stitch Fix",
+    "emoji"    => "👗",
+    "color"    => "#2B2B2B",
+    "tagline"  => "Cancel Stitch Fix subscription",
+    "about"    => "Stitch Fix is a personal styling subscription that sends curated clothing boxes. There's no monthly fee — you pay a $20 styling fee per box (credited toward purchases). Cancel to stop future shipments.",
+    "refund"   => "The $20 styling fee is credited toward items you keep. Items you return are free to send back within 5 days. No restocking fees.",
+    "platforms" => [
+      "web" => [
+        "label" => "Stitch Fix Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>stitchfix.com</strong> and sign in",
+          "Click your <strong>profile icon</strong>",
+          "Go to <strong>Account Settings</strong>",
+          "Under 'Shipment Schedule', click <strong>Cancel Fixes</strong>",
+          "Confirm cancellation",
+        ],
+        "note"  => "Cancel at least 5 days before your next scheduled Fix to avoid being charged.",
+      ],
+    ],
+    "after_cancel" => [
+      "No future Fix shipments will be scheduled",
+      "No further $20 styling fees charged",
+      "Account remains active — you can order on-demand Fixes later",
+      "Any in-transit Fix must be returned within 5 days as usual",
+    ],
+    "faq" => [
+      ["Does Stitch Fix charge a monthly fee?",
+       "No — Stitch Fix charges a $20 styling fee per box, which is credited toward anything you keep. You only pay for the clothes you decide to keep."],
+      ["How do I pause Stitch Fix instead of canceling?",
+       "In your account settings, you can adjust your Fix frequency to 'On Demand' instead of a scheduled interval, which effectively pauses automatic shipments."],
+    ],
+    "related" => ["fabletics", "amazon-prime", "walmart-plus", "instacart"],
+  ],
+
+  "alltrails" => [
+    "name"     => "AllTrails+",
+    "emoji"    => "🥾",
+    "color"    => "#5C8A3D",
+    "tagline"  => "Cancel AllTrails+ subscription",
+    "about"    => "AllTrails+ (~$35.99/year or $5.99/month) adds offline maps, route planning, weather forecasts, and life-time stats to the free AllTrails app.",
+    "refund"   => "AllTrails offers refunds for annual subscriptions canceled within 30 days of purchase. Contact support@alltrails.com. Monthly plans are not refunded.",
+    "platforms" => [
+      "web" => [
+        "label" => "AllTrails Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>alltrails.com</strong> and sign in",
+          "Click your <strong>profile icon → Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>AllTrails</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Open <strong>Google Play → Subscriptions</strong>",
+          "Tap <strong>AllTrails</strong>",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Free AllTrails app continues to work",
+      "Offline maps and downloaded trails no longer accessible",
+      "Saved trails and reviews remain on your free account",
+      "Weather overlays and life-time stats require AllTrails+",
+    ],
+    "faq" => [
+      ["Is AllTrails free after canceling AllTrails+?",
+       "Yes — AllTrails has a solid free tier with trail maps, reviews, photos, and basic navigation. AllTrails+ adds offline maps and planning tools but isn't required to use the app."],
+      ["Can I get a refund on AllTrails+?",
+       "Annual subscriptions purchased directly can be refunded within 30 days. Contact support@alltrails.com. App Store and Google Play purchases follow those platforms' refund policies."],
+    ],
+    "related" => ["strava", "whoop", "peloton", "calm"],
+  ],
+
+  "ipvanish" => [
+    "name"     => "IPVanish",
+    "emoji"    => "🛡️",
+    "color"    => "#009DDC",
+    "tagline"  => "Cancel IPVanish VPN subscription",
+    "about"    => "IPVanish (~$3.99/month on annual plan) is a VPN with unlimited simultaneous connections. It's owned by Ziff Davis. Cancel online before renewal to stop charges.",
+    "refund"   => "IPVanish offers a 30-day money-back guarantee on annual plans. Monthly plans have a 7-day refund window. Contact support to request a refund.",
+    "platforms" => [
+      "web" => [
+        "label" => "IPVanish Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>ipvanish.com</strong> and sign in",
+          "Click your <strong>account name → Account</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "For a refund, contact IPVanish support via live chat within 30 days of purchase.",
+      ],
+    ],
+    "after_cancel" => [
+      "VPN access continues until end of billing period",
+      "30-day refund available on annual plans",
+      "No further automatic charges after cancellation",
+      "Resubscribe anytime at current pricing",
+    ],
+    "faq" => [
+      ["How does IPVanish compare to NordVPN or ExpressVPN?",
+       "IPVanish is cheaper and allows unlimited device connections, making it good for households. NordVPN and ExpressVPN generally offer faster speeds and larger server networks."],
+      ["Does IPVanish keep logs of my activity?",
+       "IPVanish has a no-logs policy that has been independently audited. However, note that the company is US-based, subject to US jurisdiction."],
+    ],
+    "related" => ["nordvpn", "expressvpn", "surfshark", "proton-vpn"],
+  ],
+
+  "preply" => [
+    "name"     => "Preply",
+    "emoji"    => "🎓",
+    "color"    => "#6A5ACD",
+    "tagline"  => "Cancel Preply subscription",
+    "about"    => "Preply is a language tutoring platform where you pay per lesson or via a subscription package. Subscriptions auto-renew weekly based on your chosen lessons-per-week plan.",
+    "refund"   => "Preply offers a credit guarantee — if you're not satisfied with your first lesson, you get a free lesson credit to try a different tutor. Contact support at preply.com/en/contact.",
+    "platforms" => [
+      "web" => [
+        "label" => "Preply Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>preply.com</strong> and sign in",
+          "Click your <strong>profile icon → Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "Cancel before your weekly renewal to avoid being charged for the next set of lessons.",
+      ],
+    ],
+    "after_cancel" => [
+      "Unused lesson credits remain usable after cancellation",
+      "No further weekly charges",
+      "Your tutor history and progress notes are saved",
+      "You can book individual lessons without a subscription",
+    ],
+    "faq" => [
+      ["What happens to my unused Preply lessons if I cancel?",
+       "Unused lessons credits remain in your account for 365 days after the last subscription payment. You can still book lessons with your tutor using those credits."],
+      ["Can I use Preply without a subscription?",
+       "Yes — you can purchase individual trial lessons at a one-time rate. Subscriptions just offer a discounted per-lesson rate based on your weekly lesson commitment."],
+    ],
+    "related" => ["rosetta-stone", "babbel", "duolingo", "masterclass"],
+  ],
+
+  "rosetta-stone" => [
+    "name"     => "Rosetta Stone",
+    "emoji"    => "🗿",
+    "color"    => "#003087",
+    "tagline"  => "Cancel Rosetta Stone subscription",
+    "about"    => "Rosetta Stone offers monthly (~$11.99), annual (~$7.99/mo), and lifetime ($179) plans for 25+ languages. Cancel before renewal to stop automatic charges.",
+    "refund"   => "Rosetta Stone offers a 30-day money-back guarantee on all subscriptions. Contact support at rosettastone.com/support within 30 days of purchase.",
+    "platforms" => [
+      "web" => [
+        "label" => "Rosetta Stone Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>rosettastone.com</strong> and sign in",
+          "Click your <strong>name → Account Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Auto-Renewal</strong>",
+          "Confirm",
+        ],
+        "note"  => "For the 30-day refund, contact support directly at rosettastone.com/support.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Rosetta Stone</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access continues until end of current billing period",
+      "30-day refund available if requested promptly",
+      "Your language progress is saved in your account",
+      "Lifetime plan holders are not affected",
+    ],
+    "faq" => [
+      ["Is Rosetta Stone still worth it in 2024?",
+       "Rosetta Stone's immersive approach works well for building listening and speaking intuition. For structured grammar learning, Babbel may be more efficient. For casual practice, Duolingo is free."],
+      ["What's the difference between Rosetta Stone subscription and lifetime?",
+       "The lifetime plan ($179 one-time) gives permanent access to all 25 languages. At $11.99/month, the lifetime pays for itself in about 15 months."],
+    ],
+    "related" => ["babbel", "duolingo", "preply", "pimsleur"],
+  ],
+
+  "keeper" => [
+    "name"     => "Keeper",
+    "emoji"    => "🔑",
+    "color"    => "#1A6BCC",
+    "tagline"  => "Cancel Keeper password manager subscription",
+    "about"    => "Keeper Password Manager (~$2.91/month billed annually) securely stores passwords, payment cards, and private documents. Cancel before your annual renewal to stop charges.",
+    "refund"   => "Keeper offers refunds within 30 days of purchase for new subscriptions. Contact support at keepersecurity.com/support.",
+    "platforms" => [
+      "web" => [
+        "label" => "Keeper Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>keepersecurity.com</strong> and sign in",
+          "Click your <strong>account icon → Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Keeper</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Vault access continues until end of billing period",
+      "Export your passwords before cancellation as a backup",
+      "Free tier available with limited features after expiry",
+      "Your data remains encrypted in the vault",
+    ],
+    "faq" => [
+      ["What happens to my passwords if I cancel Keeper?",
+       "Your vault remains accessible in read-only mode on the free tier. Export your passwords (Settings → Export) before canceling to ensure you have a backup."],
+      ["How does Keeper compare to 1Password or LastPass?",
+       "Keeper has the most rigorous security certifications (SOC 2, ISO 27001). 1Password is known for best-in-class UX. LastPass had a major breach in 2022 and is now considered less trusted by security professionals."],
+    ],
+    "related" => ["lastpass", "1password", "nordvpn", "proton-vpn"],
+  ],
+
+  "lastpass" => [
+    "name"     => "LastPass",
+    "emoji"    => "🔐",
+    "color"    => "#D32D27",
+    "tagline"  => "Cancel LastPass subscription",
+    "about"    => "LastPass Premium (~$3/month billed annually) adds unlimited device syncing, dark web monitoring, and 1 GB encrypted storage. The free tier is limited to one device type.",
+    "refund"   => "LastPass offers refunds within 30 days of purchase. Contact support at lastpass.com/support.",
+    "platforms" => [
+      "web" => [
+        "label" => "LastPass Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>lastpass.com</strong> and sign in",
+          "Click your <strong>username → Account Settings</strong>",
+          "Select <strong>Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "Export your vault data before canceling: Account Settings → Advanced → Export.",
+      ],
+    ],
+    "after_cancel" => [
+      "Reverts to free tier (one device type only)",
+      "All saved passwords remain accessible on free plan",
+      "Dark web monitoring and emergency access disabled",
+      "Export your data as a backup before canceling",
+    ],
+    "faq" => [
+      ["Is LastPass safe to use after the 2022 breach?",
+       "LastPass suffered a major breach in 2022 where encrypted vaults were stolen. While encrypted data requires your master password to decrypt, many security experts now recommend switching to Bitwarden, 1Password, or Keeper as safer alternatives."],
+      ["Does LastPass have a free tier?",
+       "Yes — LastPass free allows unlimited passwords but syncs only across one device type (mobile OR desktop, not both). Premium ($3/mo) adds multi-device sync."],
+    ],
+    "related" => ["1password", "keeper", "nordvpn", "proton-vpn"],
+  ],
+
+  "1password" => [
+    "name"     => "1Password",
+    "emoji"    => "🗝️",
+    "color"    => "#1A8CFF",
+    "tagline"  => "Cancel 1Password subscription",
+    "about"    => "1Password Individual (~$2.99/month billed annually) or Families (~$4.99/month for up to 5 users) is a premium password manager known for its security and polished design.",
+    "refund"   => "1Password offers refunds within 30 days of purchase. Contact support at support.1password.com.",
+    "platforms" => [
+      "web" => [
+        "label" => "1Password Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>my.1password.com</strong> and sign in",
+          "Click your <strong>name → Manage Plan</strong>",
+          "Select <strong>Cancel Subscription</strong>",
+          "Follow prompts to confirm",
+        ],
+        "note"  => "Export your vault (File → Export) before canceling as a safety backup.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>1Password</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Read-only access to your vault after cancellation",
+      "Cannot add or edit passwords without active subscription",
+      "Export your data before the vault becomes read-only",
+      "Resubscribe anytime to restore full access",
+    ],
+    "faq" => [
+      ["Does 1Password have a free tier?",
+       "No — 1Password does not offer a permanent free tier. You can try it free for 14 days. After canceling, the vault goes into read-only mode. Consider Bitwarden (free, open-source) as a free alternative."],
+      ["Is 1Password safer than LastPass?",
+       "Generally yes — 1Password uses a two-secret key system (master password + secret key) that makes remote attacks much harder. 1Password has not had a major breach like LastPass's 2022 incident."],
+    ],
+    "related" => ["lastpass", "keeper", "nordvpn", "proton-vpn"],
+  ],
+
 ];
 
 // ── Routing ──────────────────────────────────────────────────────────────────
@@ -6254,6 +6688,10 @@ $all_apps = [
   ["Monday.com","monday-com"],["Apple Fitness+","apple-fitness-plus"],
   ["Max","max"],["ViX+","vix"],["Showtime","showtime"],
   ["Apple One","apple-one"],["Plex Pass","plex"],
+  ["DAZN","dazn"],["Fabletics","fabletics"],["Stitch Fix","stitch-fix"],
+  ["AllTrails+","alltrails"],["IPVanish","ipvanish"],["Preply","preply"],
+  ["Rosetta Stone","rosetta-stone"],["Keeper","keeper"],
+  ["LastPass","lastpass"],["1Password","1password"],
 ];
 
 // ── Audit form handler ────────────────────────────────────────────────────────
