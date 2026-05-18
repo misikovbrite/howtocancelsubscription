@@ -45,6 +45,9 @@ $apps = [
   ["slug"=>"google-workspace", "name"=>"Google Workspace",  "cat"=>"productivite", "vol"=>30],
   ["slug"=>"happn",            "name"=>"Happn",             "cat"=>"autre",        "vol"=>30],
   ["slug"=>"surfshark",        "name"=>"Surfshark",         "cat"=>"securite",     "vol"=>20],
+  ["slug"=>"ligue-1",          "name"=>"Ligue 1 (DAZN)",    "cat"=>"streaming",    "vol"=>70],
+  ["slug"=>"bouygues",         "name"=>"Bouygues Telecom",   "cat"=>"telecom",      "vol"=>50],
+  ["slug"=>"molotov",          "name"=>"Molotov Plus",       "cat"=>"streaming",    "vol"=>30],
 ];
 
 usort($apps, fn($a,$b) => $b['vol'] - $a['vol']);

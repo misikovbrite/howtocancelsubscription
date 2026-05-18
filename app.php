@@ -7344,6 +7344,561 @@ $apps_data = [
     "related" => ["aura", "experian", "transunion", "equifax"],
   ],
 
+  "sams-club" => [
+    "name"     => "Sam's Club",
+    "emoji"    => "🏪",
+    "color"    => "#004F9A",
+    "tagline"  => "Cancel Sam's Club membership",
+    "about"    => "Sam's Club memberships cost $50/year (Club) or $110/year (Plus). Cancel for a pro-rated refund on the unused portion — Sam's Club guarantees a full refund if you're not satisfied.",
+    "refund"   => "Sam's Club offers a full membership refund at any time if you're not satisfied. Visit the Membership Desk at any Sam's Club or call 1-888-746-7726.",
+    "platforms" => [
+      "web" => [
+        "label" => "Sam's Club Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>samsclub.com</strong> and sign in",
+          "Click your <strong>name → Account</strong>",
+          "Select <strong>Membership</strong>",
+          "Click <strong>Cancel Membership</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "You can also cancel in-store at the Membership Desk or call 1-888-746-7726.",
+      ],
+      "iphone" => [
+        "label" => "Sam's Club App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Sam's Club app</strong>",
+          "Tap <strong>Account → Membership</strong>",
+          "Tap <strong>Cancel Membership</strong>",
+          "Confirm",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Pro-rated refund available on remaining membership time",
+      "Scan & Go and other member benefits end immediately",
+      "Sam's Club credit card continues to work (separate from membership)",
+      "Plus membership cashback is forfeited on cancellation",
+    ],
+    "faq" => [
+      ["Can I get a refund when canceling Sam's Club?",
+       "Yes — Sam's Club offers a full satisfaction guarantee. You can get a pro-rated refund for the unused portion of your membership at any time. Visit the Membership Desk or call 1-888-746-7726."],
+      ["What's the difference between Sam's Club and Costco?",
+       "Sam's Club (Walmart-owned) is generally cheaper to join ($50/year vs Costco's $65/year) and has more locations in the South/Midwest. Costco is known for better food quality and more exclusive brands. Both offer similar warehouse club benefits."],
+    ],
+    "related" => ["costco", "walmart-plus", "amazon-prime", "instacart"],
+  ],
+
+  "amazon-subscribe-save" => [
+    "name"     => "Amazon Subscribe & Save",
+    "emoji"    => "📦",
+    "color"    => "#FF9900",
+    "tagline"  => "Cancel Amazon Subscribe & Save subscriptions",
+    "about"    => "Amazon Subscribe & Save automatically ships household products (groceries, toiletries, pet food) on a recurring schedule at a 5–15% discount. Cancel individual subscriptions or all at once.",
+    "refund"   => "Amazon does not charge until items ship. Cancel before the scheduled ship date to avoid charges. If already charged, contact Amazon customer service for a return.",
+    "platforms" => [
+      "web" => [
+        "label" => "Amazon Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>amazon.com</strong> and sign in",
+          "Hover over <strong>Accounts & Lists → Your Account</strong>",
+          "Click <strong>Subscribe & Save</strong>",
+          "Find the subscription you want to cancel",
+          "Click <strong>Cancel subscription</strong> next to the item",
+        ],
+        "note"  => "Cancel individual items separately. To cancel all at once, cancel each subscription from the Subscribe & Save dashboard.",
+      ],
+      "iphone" => [
+        "label" => "Amazon App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Amazon Shopping app</strong>",
+          "Tap <strong>☰ → Your Account</strong>",
+          "Tap <strong>Subscribe & Save</strong>",
+          "Tap the subscription to cancel",
+          "Tap <strong>Cancel subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "No further shipments or charges for canceled items",
+      "Your discount disappears — buy at regular price if still needed",
+      "Amazon Prime membership is not affected",
+      "Re-enroll in Subscribe & Save at any time",
+    ],
+    "faq" => [
+      ["How do I cancel all Amazon Subscribe & Save subscriptions at once?",
+       "Amazon doesn't have a single 'cancel all' button. Go to amazon.com → Accounts & Lists → Subscribe & Save, then cancel each subscription individually. Or contact Amazon customer service to help cancel all at once."],
+      ["Does canceling Subscribe & Save cancel Amazon Prime?",
+       "No — Subscribe & Save is a separate feature within Amazon. Canceling your Subscribe & Save subscriptions has no effect on your Amazon Prime membership."],
+    ],
+    "related" => ["amazon-prime", "walmart-plus", "instacart", "hellofresh"],
+  ],
+
+  "amazon-fresh" => [
+    "name"     => "Amazon Fresh",
+    "emoji"    => "🛒",
+    "color"    => "#00A650",
+    "tagline"  => "Cancel Amazon Fresh subscription",
+    "about"    => "Amazon Fresh grocery delivery is free for Prime members in eligible areas. Some areas require an Amazon Fresh subscription add-on or a delivery fee. Manage through your Amazon account.",
+    "refund"   => "Amazon Fresh charges apply per order. Cancel future orders and subscriptions through your Amazon account to stop future charges.",
+    "platforms" => [
+      "web" => [
+        "label" => "Amazon Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>amazon.com</strong> and sign in",
+          "Go to <strong>Accounts & Lists → Memberships & Subscriptions</strong>",
+          "Find <strong>Amazon Fresh</strong>",
+          "Click <strong>Cancel subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "Amazon Fresh is included with Prime in many areas. If you see no separate subscription, you may just have delivery fees to manage.",
+      ],
+      "iphone" => [
+        "label" => "Amazon App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Amazon Shopping app</strong>",
+          "Tap <strong>☰ → Your Account → Memberships & Subscriptions</strong>",
+          "Find <strong>Amazon Fresh</strong> and tap <strong>Cancel</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "No further Amazon Fresh delivery charges",
+      "Amazon Prime membership remains active",
+      "You can still shop on Amazon for non-grocery items",
+      "Grocery delivery available through Instacart or Walmart+ as alternatives",
+    ],
+    "faq" => [
+      ["Is Amazon Fresh free with Prime?",
+       "In many areas, Amazon Fresh delivery is free with Prime for orders over a minimum amount (typically $35–$100). In some markets, an additional Amazon Fresh subscription is required. Availability varies by ZIP code."],
+      ["What's the difference between Amazon Fresh and Whole Foods delivery?",
+       "Amazon Fresh delivers Amazon's own grocery brand and national brands. Whole Foods delivery (also via Amazon) carries Whole Foods' organic/premium selection. Both use the Amazon app but have separate inventory."],
+    ],
+    "related" => ["amazon-prime", "instacart", "walmart-plus", "hellofresh"],
+  ],
+
+  "grubhub" => [
+    "name"     => "Grubhub+",
+    "emoji"    => "🍔",
+    "color"    => "#FF8000",
+    "tagline"  => "Cancel Grubhub+ subscription",
+    "about"    => "Grubhub+ (~$9.99/month) offers unlimited free delivery on orders over $12 from eligible restaurants. Cancel through the Grubhub app or website.",
+    "refund"   => "Grubhub does not offer refunds on Grubhub+ membership fees. Cancel before your next billing date to stop future charges.",
+    "platforms" => [
+      "web" => [
+        "label" => "Grubhub Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>grubhub.com</strong> and sign in",
+          "Click your <strong>profile icon → Grubhub+</strong>",
+          "Click <strong>Cancel Membership</strong>",
+          "Follow the prompts to confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "Grubhub App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>Grubhub app</strong>",
+          "Tap <strong>Account → Grubhub+</strong>",
+          "Tap <strong>Cancel Membership</strong>",
+          "Confirm",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Grubhub+ benefits end at the next billing date",
+      "Delivery fees apply per order going forward",
+      "Your order history and saved addresses remain",
+      "Resubscribe anytime to restore free delivery",
+    ],
+    "faq" => [
+      ["Is Grubhub+ worth it?",
+       "Grubhub+ pays for itself if you order delivery 2–3 times per month (typical delivery fee is $3–$5). If you order less often, DoorDash DashPass or Uber One may offer better restaurant selection in your area."],
+      ["How does Grubhub+ compare to DoorDash DashPass?",
+       "Both offer unlimited free delivery for ~$10/month. DoorDash generally has better restaurant selection in most cities. Grubhub+ may be a better value if Grubhub has your preferred restaurants."],
+    ],
+    "related" => ["doordash", "uber-eats", "instacart", "amazon-fresh"],
+  ],
+
+  "skillshare" => [
+    "name"     => "Skillshare",
+    "emoji"    => "🎨",
+    "color"    => "#00C4CC",
+    "tagline"  => "Cancel Skillshare subscription",
+    "about"    => "Skillshare (~$168/year or $32/month) offers unlimited access to 40,000+ online classes in design, business, technology, and more. Cancel before your renewal to stop charges.",
+    "refund"   => "Skillshare offers a refund within 7 days of your initial purchase or annual renewal. Contact support at skillshare.com/help.",
+    "platforms" => [
+      "web" => [
+        "label" => "Skillshare Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>skillshare.com</strong> and sign in",
+          "Click your <strong>profile photo → Settings</strong>",
+          "Select <strong>Billing</strong>",
+          "Click <strong>Cancel Membership</strong>",
+          "Confirm",
+        ],
+        "note"  => "7-day refund window from initial purchase or annual renewal date.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Skillshare</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access to classes until end of billing period",
+      "Saved classes and progress preserved",
+      "Free trial content still accessible",
+      "Resubscribe to regain full access",
+    ],
+    "faq" => [
+      ["Is Skillshare worth it compared to free YouTube tutorials?",
+       "Skillshare's structured, project-based courses with community feedback go beyond typical YouTube tutorials. It's best for creative skills (design, illustration, photography). For pure tech skills, Udemy or Pluralsight offer better-structured courses."],
+      ["Does Skillshare offer a free trial?",
+       "Yes — Skillshare offers a 1-month free trial for new users. Set a reminder to cancel before the trial ends if you don't want to be charged the annual fee (~$168/year)."],
+    ],
+    "related" => ["masterclass", "coursera", "preply", "duolingo"],
+  ],
+
+  "adobe-creative-cloud" => [
+    "name"     => "Adobe Creative Cloud",
+    "emoji"    => "🎨",
+    "color"    => "#DA1F26",
+    "tagline"  => "Cancel Adobe Creative Cloud subscription",
+    "about"    => "Adobe Creative Cloud All Apps (~$54.99/month or $599.88/year) includes Photoshop, Illustrator, Premiere Pro, and 20+ other apps. Canceling mid-year incurs a 50% early termination fee.",
+    "refund"   => "Adobe offers a full refund within 14 days of purchase. After 14 days but before the annual term ends, a 50% cancellation fee applies on the remaining balance. Cancel at the end of your annual term to avoid fees.",
+    "platforms" => [
+      "web" => [
+        "label" => "Adobe Account",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>account.adobe.com</strong> and sign in",
+          "Click <strong>Plans</strong>",
+          "Click <strong>Manage Plan</strong> next to Creative Cloud",
+          "Click <strong>Cancel Plan</strong>",
+          "Choose your cancellation reason and confirm",
+        ],
+        "note"  => "If you have an annual plan, canceling early may trigger a 50% fee. Cancel at your annual renewal date to avoid this.",
+      ],
+    ],
+    "after_cancel" => [
+      "All Creative Cloud apps become read-only after expiry",
+      "Cloud storage (100GB) reduced to 2GB free",
+      "Your files are preserved but can't be edited in CC apps",
+      "Free alternatives: GIMP (Photoshop), Inkscape (Illustrator), DaVinci Resolve (Premiere)",
+    ],
+    "faq" => [
+      ["How do I avoid Adobe's 50% cancellation fee?",
+       "Wait until your annual plan renews, then cancel within 14 days of renewal (full refund window). Or cancel at the exact end of your annual term. If you're mid-term, you'll owe 50% of the remaining months."],
+      ["What happens to my Adobe files if I cancel Creative Cloud?",
+       "Your locally saved files (.psd, .ai, .prproj) remain on your computer. Cloud-synced files in Creative Cloud are retained at 2GB (free tier). You won't be able to edit them without a subscription, but alternatives like GIMP or Affinity can open most Adobe formats."],
+    ],
+    "related" => ["adobe", "figma", "canva", "lightroom"],
+  ],
+
+  "clear" => [
+    "name"     => "CLEAR",
+    "emoji"    => "✈️",
+    "color"    => "#00A3E0",
+    "tagline"  => "Cancel CLEAR airport security membership",
+    "about"    => "CLEAR (~$189/year) uses biometric scanning (fingerprint or iris) to verify your identity at airport security, letting you skip the document check line. Available at 50+ US airports.",
+    "refund"   => "CLEAR offers a 30-day money-back guarantee for new members. After 30 days, no refund is provided but access continues until the end of your membership year.",
+    "platforms" => [
+      "web" => [
+        "label" => "CLEAR Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>clearme.com</strong> and sign in",
+          "Click your <strong>name → My Account</strong>",
+          "Select <strong>Membership</strong>",
+          "Click <strong>Cancel Membership</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "30-day money-back guarantee for new members. Cancel within 30 days for a full refund.",
+      ],
+      "iphone" => [
+        "label" => "CLEAR App",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open the <strong>CLEAR app</strong>",
+          "Tap <strong>Profile → Manage Membership</strong>",
+          "Tap <strong>Cancel Membership</strong>",
+          "Confirm",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "CLEAR access continues until end of membership year",
+      "Biometric data can be deleted on request",
+      "TSA PreCheck remains active (separate program)",
+      "Re-enroll anytime without re-scanning biometrics",
+    ],
+    "faq" => [
+      ["Is CLEAR worth $189/year?",
+       "CLEAR is worth it for frequent flyers (8+ flights/year) at major airports. It saves 10–20 minutes per trip on document checks. Combined with TSA PreCheck, you get the fastest possible airport experience. Light travelers may not justify the cost."],
+      ["What's the difference between CLEAR and TSA PreCheck?",
+       "TSA PreCheck ($85/5 years) speeds up the security screening line (no shoes/liquids removal). CLEAR ($189/year) speeds up the identity verification step before the screening line. They're complementary — many frequent flyers use both."],
+    ],
+    "related" => ["amazon-prime", "aaa", "costco", "alltrails"],
+  ],
+
+  "new-yorker" => [
+    "name"     => "The New Yorker",
+    "emoji"    => "🎩",
+    "color"    => "#CC0000",
+    "tagline"  => "Cancel The New Yorker subscription",
+    "about"    => "The New Yorker digital subscription (~$12/month or $109/year) provides unlimited access to articles, cartoons, and the full archive. Cancel online or by phone.",
+    "refund"   => "The New Yorker offers a pro-rated refund for the unused portion of annual subscriptions. Contact customer service at newyorker.com/customer-service or 1-800-825-2510.",
+    "platforms" => [
+      "web" => [
+        "label" => "New Yorker Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>newyorker.com</strong> and sign in",
+          "Click your <strong>name → Manage Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "You can also call 1-800-825-2510 to cancel and request a pro-rated refund.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>The New Yorker</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access continues until end of current billing period",
+      "Pro-rated refund available on annual subscriptions",
+      "Free articles (limited per month) still accessible",
+      "Newsletter subscriptions unaffected",
+    ],
+    "faq" => [
+      ["How many free articles does The New Yorker offer?",
+       "The New Yorker offers a limited number of free articles per month before requiring a subscription. The exact number varies but is typically 3–5 articles per month."],
+      ["Can I share my New Yorker subscription?",
+       "The New Yorker allows sharing with one additional household member at no extra cost. Go to Manage Subscription → Share My Subscription to invite a family member."],
+    ],
+    "related" => ["new-york-times", "the-atlantic", "washington-post", "economist"],
+  ],
+
+  "the-atlantic" => [
+    "name"     => "The Atlantic",
+    "emoji"    => "🌊",
+    "color"    => "#006492",
+    "tagline"  => "Cancel The Atlantic subscription",
+    "about"    => "The Atlantic digital subscription (~$9.99/month or $99.99/year) offers unlimited access to long-form journalism on politics, culture, science, and technology.",
+    "refund"   => "The Atlantic offers a pro-rated refund on annual subscriptions canceled within 30 days. Contact customer service at theatlantic.com/customer-service.",
+    "platforms" => [
+      "web" => [
+        "label" => "The Atlantic Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>theatlantic.com</strong> and sign in",
+          "Click your <strong>name → My Account</strong>",
+          "Select <strong>Manage Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>The Atlantic</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access continues until end of billing period",
+      "Limited free articles available after cancellation",
+      "Newsletter subscriptions remain active",
+      "Resubscribe anytime for full access",
+    ],
+    "faq" => [
+      ["How many free articles does The Atlantic allow?",
+       "The Atlantic allows 5 free articles per month before requiring a subscription. Some articles are permanently free."],
+      ["Is The Atlantic worth the subscription price?",
+       "The Atlantic publishes some of the best long-form journalism in the US on science, politics, and culture. At ~$9.99/month, it's comparable to The New Yorker and offers strong value for news enthusiasts."],
+    ],
+    "related" => ["new-yorker", "new-york-times", "economist", "wired"],
+  ],
+
+  "time-magazine" => [
+    "name"     => "TIME Magazine",
+    "emoji"    => "⏱️",
+    "color"    => "#CC0000",
+    "tagline"  => "Cancel TIME Magazine subscription",
+    "about"    => "TIME digital subscription (~$29.99/year for digital or $49.99/year for print+digital) gives access to all articles and the full archive. Cancel online, by phone, or by mail.",
+    "refund"   => "TIME offers a pro-rated refund on the unserved portion of your subscription. Call 1-800-843-8463 or email customerservice@timeinc.com.",
+    "platforms" => [
+      "web" => [
+        "label" => "TIME Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>time.com</strong> and sign in",
+          "Click your <strong>name → My Account</strong>",
+          "Select <strong>Manage Subscription</strong>",
+          "Click <strong>Cancel</strong>",
+          "Confirm the cancellation",
+        ],
+        "note"  => "Call 1-800-843-8463 for faster assistance or to request a refund.",
+      ],
+    ],
+    "after_cancel" => [
+      "Access through the end of paid period",
+      "Pro-rated refund available on remaining subscription",
+      "Free TIME articles still available (limited)",
+      "Print subscribers: contact 1-800-843-8463 to stop delivery",
+    ],
+    "faq" => [
+      ["How do I stop TIME Magazine from auto-renewing?",
+       "Log in at time.com → My Account → Manage Subscription and turn off auto-renewal. Or call 1-800-843-8463 to cancel auto-renewal by phone."],
+      ["Can I get a refund for TIME Magazine?",
+       "Yes — TIME offers a pro-rated refund for the unserved portion of your subscription. Contact customer service at 1-800-843-8463 or customerservice@timeinc.com."],
+    ],
+    "related" => ["new-yorker", "the-atlantic", "wired", "national-geographic"],
+  ],
+
+  "national-geographic" => [
+    "name"     => "National Geographic",
+    "emoji"    => "🌍",
+    "color"    => "#FFCC00",
+    "tagline"  => "Cancel National Geographic subscription",
+    "about"    => "National Geographic subscriptions (~$39.99/year for digital or $49.99/year for print+digital) provide access to the full article archive, documentaries, and National Geographic+. Owned by Disney.",
+    "refund"   => "National Geographic offers a pro-rated refund on the unserved portion of annual subscriptions. Contact 1-800-647-5463 or customer.service@nationalgeographic.com.",
+    "platforms" => [
+      "web" => [
+        "label" => "NatGeo Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>nationalgeographic.com</strong> and sign in",
+          "Click your <strong>profile → Manage Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "National Geographic+ (streaming via Disney Bundle) is managed separately through Disney+.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>National Geographic</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Magazine access through end of paid period",
+      "Pro-rated refund on remaining subscription",
+      "Free NatGeo articles still available online",
+      "Disney+ subscription (if bundled) must be canceled separately",
+    ],
+    "faq" => [
+      ["Is National Geographic available on Disney+?",
+       "Yes — National Geographic documentaries and shows are available through Disney+. A National Geographic magazine subscription is separate from Disney+ and must be managed at nationalgeographic.com."],
+      ["Can I give a National Geographic subscription as a gift?",
+       "Yes — gift subscriptions are available at nationalgeographic.com/gifts. Gift subscriptions don't auto-renew and don't require cancellation."],
+    ],
+    "related" => ["disney-plus", "time-magazine", "the-atlantic", "alltrails"],
+  ],
+
+  "wired" => [
+    "name"     => "WIRED",
+    "emoji"    => "⚡",
+    "color"    => "#000000",
+    "tagline"  => "Cancel WIRED magazine subscription",
+    "about"    => "WIRED digital subscription (~$29.99/year) covers technology, science, culture, and business. Published by Condé Nast, the same publisher as Vanity Fair and The New Yorker.",
+    "refund"   => "WIRED offers a pro-rated refund on unused portions of annual subscriptions. Contact 1-800-769-4733 or wired.com/account.",
+    "platforms" => [
+      "web" => [
+        "label" => "WIRED Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>wired.com</strong> and sign in",
+          "Click your <strong>name → Manage Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+        "note"  => "WIRED is published by Condé Nast — you may also manage subscriptions at condenaststore.com.",
+      ],
+    ],
+    "after_cancel" => [
+      "Access through end of billing period",
+      "Limited free articles available monthly",
+      "Newsletter subscriptions unaffected",
+      "Resubscribe anytime",
+    ],
+    "faq" => [
+      ["How many free articles does WIRED offer?",
+       "WIRED allows 4 free articles per month before the paywall. Some articles (especially older ones) are freely accessible."],
+      ["Is WIRED worth subscribing to?",
+       "WIRED is the gold standard for tech journalism. At $29.99/year (~$2.50/month), it's one of the best-value tech subscriptions. Great for professionals in tech, design, and science fields."],
+    ],
+    "related" => ["the-atlantic", "new-yorker", "time-magazine", "chatgpt"],
+  ],
+
+  "vanity-fair" => [
+    "name"     => "Vanity Fair",
+    "emoji"    => "👑",
+    "color"    => "#8B0000",
+    "tagline"  => "Cancel Vanity Fair subscription",
+    "about"    => "Vanity Fair digital subscription (~$24.99/year) offers unlimited access to cultural commentary, politics, Hollywood, and fashion. Published by Condé Nast.",
+    "refund"   => "Vanity Fair offers a pro-rated refund on the unserved portion of annual subscriptions. Contact 1-800-365-0635 or vanityfair.com/account.",
+    "platforms" => [
+      "web" => [
+        "label" => "Vanity Fair Website",
+        "icon"  => "💻",
+        "steps" => [
+          "Go to <strong>vanityfair.com</strong> and sign in",
+          "Click your <strong>profile → Manage Subscription</strong>",
+          "Click <strong>Cancel Subscription</strong>",
+          "Confirm",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Open <strong>Settings → [your name] → Subscriptions</strong>",
+          "Tap <strong>Vanity Fair</strong>",
+          "Tap <strong>Cancel Subscription</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Access through end of billing period",
+      "Limited free articles available monthly",
+      "Hollywood and awards coverage still partially free",
+      "Resubscribe anytime",
+    ],
+    "faq" => [
+      ["How do I cancel a Vanity Fair print subscription?",
+       "For print subscriptions, call 1-800-365-0635 or email vfcustomerservice@condenast.com. You can also log in at vanityfair.com/account to manage print delivery."],
+      ["Is Vanity Fair and Condé Nast the same?",
+       "Vanity Fair is owned by Condé Nast, which also publishes WIRED, The New Yorker, Vogue, GQ, and many others. You can manage all your Condé Nast subscriptions through a single account."],
+    ],
+    "related" => ["new-yorker", "wired", "time-magazine", "the-atlantic"],
+  ],
+
 ];
 
 // ── Routing ──────────────────────────────────────────────────────────────────
@@ -7406,6 +7961,12 @@ $all_apps = [
   ["Ritual","ritual"],["The Athletic","the-athletic"],
   ["Headspace","headspace"],["Oura Ring","oura-ring"],
   ["Lose It!","lose-it"],["LifeLock","lifelock"],
+  ["Sam's Club","sams-club"],["Amazon Subscribe & Save","amazon-subscribe-save"],
+  ["Amazon Fresh","amazon-fresh"],["Grubhub+","grubhub"],["Skillshare","skillshare"],
+  ["Adobe Creative Cloud","adobe-creative-cloud"],["CLEAR","clear"],
+  ["The New Yorker","new-yorker"],["The Atlantic","the-atlantic"],
+  ["TIME Magazine","time-magazine"],["National Geographic","national-geographic"],
+  ["WIRED","wired"],["Vanity Fair","vanity-fair"],
 ];
 
 // ── Audit form handler ────────────────────────────────────────────────────────

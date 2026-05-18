@@ -2101,6 +2101,151 @@ $apps_data = [
     "related" => ["nordvpn", "expressvpn", "proton-vpn", "norton"],
   ],
 
+  "ligue-1" => [
+    "name"     => "Ligue 1",
+    "emoji"    => "⚽",
+    "color"    => "#003D8F",
+    "tagline"  => "Annuler abonnement Ligue 1",
+    "about"    => "La Ligue 1 est diffusée en France principalement sur DAZN (droits principaux, ~13,99 €/mois) et sur beIN Sports. L'annulation se fait directement auprès de votre diffuseur.",
+    "refund"   => "DAZN offre une garantie satisfait ou remboursé de 7 jours. beIN Sports ne rembourse généralement pas la période en cours.",
+    "platforms" => [
+      "web" => [
+        "label" => "DAZN (droits principaux)",
+        "icon"  => "💻",
+        "steps" => [
+          "Rendez-vous sur <strong>dazn.com</strong> et connectez-vous",
+          "Cliquez sur votre <strong>avatar → Mon compte</strong>",
+          "Sélectionnez <strong>Abonnement</strong>",
+          "Cliquez sur <strong>Annuler l'abonnement</strong>",
+          "Confirmez",
+        ],
+        "note"  => "DAZN détient les droits principaux de la Ligue 1 depuis 2024. Si vous regardez via Canal+ ou beIN Sports, annulez directement chez eux.",
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>DAZN</strong> (ou beIN Sports)",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Accès aux matchs jusqu'à la fin de la période payée",
+      "Les replays des matchs déjà diffusés restent accessibles",
+      "Vous pouvez vous réabonner à tout moment",
+      "Canal+ propose parfois des offres incluant la Ligue 1",
+    ],
+    "faq" => [
+      ["Où regarder la Ligue 1 en France en 2024 ?",
+       "Depuis 2024, DAZN détient les droits principaux (8 matchs/journée, ~13,99 €/mois). beIN Sports diffuse 2 matchs/journée (~15 €/mois). Canal+ diffuse parfois des affiches en clair. Il est possible de combiner DAZN + beIN Sports pour voir tous les matchs."],
+      ["Puis-je regarder la Ligue 1 sans abonnement ?",
+       "Non, la Ligue 1 n'est pas diffusée gratuitement en France. Amazon Prime Video n'a plus les droits. Il faut au minimum un abonnement DAZN (~13,99 €/mois) pour accéder à la plupart des matchs."],
+    ],
+    "related" => ["dazn", "canal-plus", "amazon-prime", "disney-plus"],
+  ],
+
+  "bouygues" => [
+    "name"     => "Bouygues Telecom",
+    "emoji"    => "📱",
+    "color"    => "#005EB8",
+    "tagline"  => "Résilier abonnement Bouygues Telecom",
+    "about"    => "Bouygues Telecom propose des offres mobile, box internet (Bbox) et téléphone fixe. La résiliation est possible sans frais après la période d'engagement (généralement 12 ou 24 mois).",
+    "refund"   => "Si vous résiliez avant la fin de l'engagement, des frais de résiliation anticipée s'appliquent (jusqu'à plusieurs centaines d'euros selon l'offre). Après l'engagement, la résiliation est gratuite.",
+    "platforms" => [
+      "web" => [
+        "label" => "Espace client Bouygues",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>bouyguestelecom.fr</strong>",
+          "Allez dans <strong>Mon espace client → Mes contrats</strong>",
+          "Sélectionnez le contrat à résilier",
+          "Cliquez sur <strong>Résilier ce contrat</strong>",
+          "Confirmez par email ou courrier recommandé si demandé",
+        ],
+        "note"  => "La résiliation prend effet 10 jours après réception de votre demande.",
+      ],
+      "iphone" => [
+        "label" => "Par courrier recommandé",
+        "icon"  => "✉️",
+        "steps" => [
+          "Envoyez un courrier recommandé avec AR à : Bouygues Telecom — Service Résiliation, TSA 59013, 60643 Chantilly Cedex",
+          "Précisez votre numéro de compte et le(s) contrat(s) à résilier",
+          "Indiquez votre numéro de ligne et la date souhaitée",
+          "Gardez l'accusé de réception comme preuve",
+        ],
+        "note"  => "Le courrier recommandé reste la méthode la plus sûre pour les résiliations.",
+      ],
+    ],
+    "after_cancel" => [
+      "Résiliation effective 10 jours après réception de la demande",
+      "Portez votre numéro mobile chez le nouvel opérateur (RIO gratuit)",
+      "Retournez le matériel Bbox dans les délais indiqués",
+      "La dernière facture inclut les jours proratisés",
+    ],
+    "faq" => [
+      ["Comment obtenir mon code RIO Bouygues Telecom ?",
+       "Appelez le <strong>3179</strong> (gratuit, 24h/24) depuis votre mobile Bouygues. Votre code RIO vous sera communiqué automatiquement par SMS. Donnez ce code à votre nouvel opérateur pour porter votre numéro."],
+      ["Quels sont les frais de résiliation anticipée chez Bouygues ?",
+       "Si vous résiliez avant la fin de votre engagement, vous devez payer les mensualités restantes à 25% du montant initial. Pour une Bbox à 19,99 €/mois avec 12 mois restants : 12 × 19,99 × 25% = ~60 €. Après l'engagement, la résiliation est gratuite."],
+    ],
+    "related" => ["sfr", "orange", "free", "nordvpn"],
+  ],
+
+  "molotov" => [
+    "name"     => "Molotov",
+    "emoji"    => "📺",
+    "color"    => "#FF3C00",
+    "tagline"  => "Annuler abonnement Molotov Plus",
+    "about"    => "Molotov est une application française de télévision en streaming. Molotov Plus (~5,99 €/mois) ajoute l'enregistrement de programmes, le multi-écrans et des chaînes supplémentaires. La version de base est gratuite.",
+    "refund"   => "Molotov ne rembourse généralement pas les abonnements en cours. La version gratuite reste disponible après annulation.",
+    "platforms" => [
+      "web" => [
+        "label" => "molotov.tv",
+        "icon"  => "💻",
+        "steps" => [
+          "Connectez-vous sur <strong>molotov.tv</strong>",
+          "Cliquez sur votre <strong>avatar → Mon compte</strong>",
+          "Allez dans <strong>Abonnement</strong>",
+          "Cliquez sur <strong>Annuler mon abonnement</strong>",
+          "Confirmez",
+        ],
+      ],
+      "iphone" => [
+        "label" => "iPhone (App Store)",
+        "icon"  => "🍎",
+        "steps" => [
+          "Ouvrez <strong>Réglages → [votre nom] → Abonnements</strong>",
+          "Sélectionnez <strong>Molotov</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+      "android" => [
+        "label" => "Android (Google Play)",
+        "icon"  => "🤖",
+        "steps" => [
+          "Ouvrez <strong>Google Play → Abonnements</strong>",
+          "Sélectionnez <strong>Molotov</strong>",
+          "Appuyez sur <strong>Annuler l'abonnement</strong>",
+        ],
+      ],
+    ],
+    "after_cancel" => [
+      "Retour à la version gratuite avec les chaînes TNT",
+      "Les enregistrements programmés sont annulés",
+      "Les enregistrements déjà effectués restent accessibles temporairement",
+      "TF1, France 2, M6 et les chaînes TNT restent gratuites",
+    ],
+    "faq" => [
+      ["Molotov est-il gratuit ?",
+       "Oui — Molotov propose une version gratuite avec toutes les chaînes TNT (TF1, France 2, France 3, Canal+, France 5, M6, Arte, C8, W9, etc.) en direct. Molotov Plus ajoute l'enregistrement et les chaînes payantes."],
+      ["Quelle est la différence entre Molotov et MyCanal ?",
+       "Molotov est une app d'agrégation de chaînes gratuites + quelques chaînes payantes. MyCanal est l'app officielle de Canal+ avec son propre catalogue de films/séries. Molotov est idéal pour remplacer la TNT classique."],
+    ],
+    "related" => ["canal-plus", "netflix", "disney-plus", "youtube-premium"],
+  ],
+
 ];
 
 // ── Routage ──────────────────────────────────────────────────────────────────

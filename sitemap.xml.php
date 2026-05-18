@@ -31,7 +31,10 @@ $en_apps = [
   "preply","rosetta-stone","keeper","lastpass","1password",
   "blink","ring","simplisafe","avast","hims","hers","nurx",
   "transunion","equifax","acorns","ritual","the-athletic",
-  "headspace","oura-ring","lose-it","lifelock"
+  "headspace","oura-ring","lose-it","lifelock",
+  "sams-club","amazon-subscribe-save","amazon-fresh","grubhub","skillshare",
+  "adobe-creative-cloud","clear","new-yorker","the-atlantic",
+  "time-magazine","national-geographic","wired","vanity-fair"
 ];
 
 $de_apps = [
@@ -53,7 +56,8 @@ $fr_apps = [
   "meetic","playstation-plus","nordvpn","tinder","linkedin","microsoft-365",
   "xbox-game-pass","google-one","duolingo","apple-music","apple-icloud",
   "bumble","zoom","dropbox","babbel",
-  "twitch","norton","badoo","mcafee","ea-play","google-workspace","happn","surfshark"
+  "twitch","norton","badoo","mcafee","ea-play","google-workspace","happn","surfshark",
+  "ligue-1","bouygues","molotov"
 ];
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

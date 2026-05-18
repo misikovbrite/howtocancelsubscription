@@ -398,6 +398,20 @@ $apps = [
   ["Headspace",      "headspace",      "🧘", "Health & Fitness",   90, "Cancel Headspace subscription"],
   ["LifeLock",       "lifelock",       "🔒", "Security",           70, "Cancel LifeLock subscription"],
   ["Equifax",        "equifax",        "📈", "Finance",            260, "Cancel Equifax subscription"],
+  ["Sam's Club",     "sams-club",      "🏪", "Other",            2400, "Cancel Sam's Club membership"],
+  ["Amazon Subscribe & Save","amazon-subscribe-save","📦","Other",2400,"Cancel Subscribe & Save"],
+  ["The New Yorker", "new-yorker",     "🎩", "Other",            1000, "Cancel New Yorker subscription"],
+  ["Boston Globe",   "boston-globe",   "📰", "Other",             720, "Cancel Boston Globe subscription"],
+  ["TIME Magazine",  "time-magazine",  "⏱️", "Other",             590, "Cancel TIME subscription"],
+  ["Vanity Fair",    "vanity-fair",    "👑", "Other",             480, "Cancel Vanity Fair subscription"],
+  ["National Geographic","national-geographic","🌍","Other",      480, "Cancel NatGeo subscription"],
+  ["Amazon Fresh",   "amazon-fresh",   "🛒", "Other",             320, "Cancel Amazon Fresh"],
+  ["Adobe Creative Cloud","adobe-creative-cloud","🎨","Productivity",260,"Cancel Creative Cloud"],
+  ["The Atlantic",   "the-atlantic",   "🌊", "Other",             260, "Cancel The Atlantic subscription"],
+  ["CLEAR",          "clear",          "✈️", "Other",             210, "Cancel CLEAR membership"],
+  ["WIRED",          "wired",          "⚡", "Other",             210, "Cancel WIRED subscription"],
+  ["Grubhub+",       "grubhub",        "🍔", "Other",              70, "Cancel Grubhub+ membership"],
+  ["Skillshare",     "skillshare",     "🎨", "Other",              70, "Cancel Skillshare subscription"],
 ];
 
 // Sort by monthly searches
