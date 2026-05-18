@@ -68,6 +68,7 @@ $homepages = [
   [$base . "/",      "1.0"],
   [$base . "/de/",   "0.9"],
   [$base . "/fr/",   "0.9"],
+  [$base . "/best-subscription-cancellation-apps/", "0.9"],
 ];
 foreach ($homepages as [$loc, $pri]) {
     echo "  <url>\n";
